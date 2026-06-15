@@ -10,7 +10,6 @@ The system continuously monitors multidimensional sensor telemetry, calculates o
 
 The platform uses a decoupled frontend-backend architecture integrated with a multi-layered data retriever and a structured AI reasoning model.
 
-```mermaid
 graph TB
     %% Offline Pipelines (Offline / Build-Time Setup)
     subgraph Offline [Offline Setup & Training Pipeline]
@@ -92,7 +91,7 @@ graph TB
     OP5 -->|Injected Model File| IF_Inf
     OP4 -->|Seeded SQLite DB| DB
     OP2 -->|Pickled Index| VS
-```
+
 
 ---
 
@@ -194,6 +193,29 @@ The total score is capped at `3.0` and classified into actionable categories:
 *   **Low (\(< 0.5\))**: Normal. Standard continuous telemetry monitoring.
 
 ---
+
+## API Documentation & Endpoints
+
+The FastAPI backend exposes structured endpoints organized by domain routers. All endpoints are prefixed with `/api` and consolidated below:
+
+| Method | Endpoint | Description |
+| :--- | :--- | :--- |
+| `GET` | `/api/equipment` | Lists all asset master specifications from the database. |
+| `GET` | `/api/equipment/{equipment_id}` | Retrieves metadata and normal threshold settings for a specific asset. |
+| `GET` | `/api/equipment/{equipment_id}/sensors` | Fetches historical sensor readings (default limit: last 96 readings / 24 hours). |
+| `GET` | `/api/alerts` | Lists active and historical alarms sorted by Operational Risk Score priority. |
+| `GET` | `/api/alerts/{alert_id}/rca` | Triggers the Gemini 2.5 Flash diagnostic RAG pipeline to perform Root Cause Analysis (RCA). |
+| `POST` | `/api/alerts/{alert_id}/acknowledge` | Marks an active alert as acknowledged/audited in the dashboard. |
+| `GET` | `/api/predictions/health-index` | Performs batch Isolation Forest anomaly and RUL trend scoring on all assets. |
+| `GET` | `/api/predictions/risk-heatmap` | Computes risk factors (stock, delay, anomaly) across assets for the plant heatmap. |
+| `POST` | `/api/chat` | Handles multi-turn natural language troubleshooting conversations with context-bound RAG. |
+| `GET` | `/api/spares` | Returns warehouse spare parts quantities, safety minimums, lead times, and unit costs. |
+| `GET` | `/api/reports/preview/{alert_id}` | Invokes Gemini to draft a formal failure report log based on diagnostic findings. |
+| `POST` | `/api/reports/logbook` | Inserts an approved failure report draft into SQLite as a digital maintenance entry. |
+| `POST` | `/api/feedback` | Saves engineer validation logs (Accepted/Corrected ratings and outcome notes) in SQLite. |
+| `GET` | `/api/feedback` | Retrieves the audit feed of all submitted engineer feedback logs. |
+
+----
 
 ## Assumptions & Limitations
 
