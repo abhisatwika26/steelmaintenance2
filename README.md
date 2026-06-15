@@ -1,4 +1,4 @@
-# Steel Plant Maintenance Cockpit
+# Steel Plant Maintenance AI
 
 An intelligent, AI-powered decision-support and predictive maintenance platform designed for high-value manufacturing assets in steel plants (e.g., Blast Furnaces, Hot Rolling Mills, Hydraulic Systems, and Oxygen Furnaces).
 
