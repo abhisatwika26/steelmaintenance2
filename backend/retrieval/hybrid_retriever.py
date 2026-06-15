@@ -13,13 +13,16 @@ class HybridRetriever:
 
     def retrieve_evidence(self, equipment_id: str, query: str = "", failure_code: str = "") -> dict:
         """
-        Gathers structured history, inventory, graph relations, and unstructured text chunks.
+        Gathers structured history, inventory, graph relations, unstructured text chunks,
+        and past engineer feedback corrections.
         Returns:
             evidence_pack (dict)
         """
         # 1. Fetch structured history and specs from SQL
         history = self.sql_retriever.get_equipment_history(equipment_id)
         spares = self.sql_retriever.get_spares_status(equipment_id)
+        # Also fetch past engineer feedback/corrections for this equipment (§6.6 feedback loop)
+        feedback_history = self.sql_retriever.get_feedback_history(equipment_id)
 
         # 2. Fetch graph relationships if a failure mode is suspected/identified
         graph_relations = {}
@@ -43,18 +46,22 @@ class HybridRetriever:
             "equipment_history": history,
             "spares_inventory": spares,
             "graph_relations": graph_relations,
-            "documentation_chunks": vector_results
+            "documentation_chunks": vector_results,
+            "feedback_history": feedback_history
         }
 
     def format_evidence_for_prompt(self, evidence: dict) -> str:
         """
         Converts the retrieved evidence pack into a clean, markdown-formatted
         context string to be injected directly into LLM prompts.
+        Includes past engineer feedback corrections so the LLM can factor in
+        real-world outcomes from previous maintenance actions (§6.6).
         """
         hist = evidence["equipment_history"]
         spares = evidence["spares_inventory"]
         graph = evidence["graph_relations"]
         docs = evidence["documentation_chunks"]
+        feedback = evidence.get("feedback_history", [])
 
         prompt_lines = []
         prompt_lines.append("=== RETRIEVED MAINTENANCE CONTEXT & EVIDENCE ===")
@@ -103,5 +110,17 @@ class HybridRetriever:
                 prompt_lines.append("-" * 40)
             prompt_lines.append("")
             
+        # Past Engineer Feedback & Corrections
+        if feedback:
+            prompt_lines.append("Past Engineer Feedback & Corrections for This Asset:")
+            for fb in feedback:
+                rating_label = fb['rating'].replace('_', ' ').title()
+                outcome_label = fb['actual_outcome'].replace('_', ' ').title()
+                prompt_lines.append(f" - [{fb['feedback_id']}] By: {fb['submitted_by']} | Rating: {rating_label} | Outcome: {outcome_label}")
+                if fb['correction_notes']:
+                    prompt_lines.append(f"   Engineer Override Note: \"{fb['correction_notes']}\"")
+            prompt_lines.append("   NOTE: Prioritize the engineer corrections above when forming your diagnosis.")
+            prompt_lines.append("")
+
         prompt_lines.append("=================================================")
         return "\n".join(prompt_lines)

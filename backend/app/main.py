@@ -35,6 +35,22 @@ app.include_router(spares_router, prefix="/api/spares", tags=["Spare Parts"])
 app.include_router(report_router, prefix="/api/reports", tags=["Reports & Logbook"])
 app.include_router(feedback_router, prefix="/api/feedback", tags=["Feedback Loop"])
 
+@app.on_event("startup")
+def check_prerequisites():
+    """
+    Startup health check: warns if the RAG vector store index is missing.
+    Without this file, the chat wizard and RCA flows return no document chunks,
+    silently degrading quality. Run: python -m scripts.ingest_documents to fix.
+    """
+    vector_store_path = config.DATA_DIR / "processed" / "vector_store.pkl"
+    if not vector_store_path.exists():
+        print("\n" + "=" * 65)
+        print("  ⚠️  WARNING: RAG Vector Store index NOT FOUND.")
+        print(f"  Expected at: {vector_store_path}")
+        print("  The chat wizard and RCA flows will return no document chunks.")
+        print("  Fix by running:  python -m scripts.ingest_documents")
+        print("=" * 65 + "\n")
+
 @app.get("/")
 def get_root():
     return {

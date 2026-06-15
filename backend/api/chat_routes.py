@@ -40,12 +40,13 @@ def chat_wizard(data: ChatRequestSchema, db: Session = Depends(get_db), x_gemini
             )
             evidence_text = retriever.format_evidence_for_prompt(evidence_pack)
             
-            # Extract citation filenames
+            # Extract citation filenames and a short snippet of the retrieved chunk
             for doc in evidence_pack.get("documentation_chunks", []):
                 citations.append({
                     "name": doc["document_name"],
                     "type": doc["document_type"],
-                    "title": doc["title"]
+                    "title": doc["title"],
+                    "snippet": doc["text"][:220]  # First 220 chars of retrieved chunk text
                 })
         else:
             # Generic/cross-plant query: Search vector store globally
@@ -61,7 +62,8 @@ def chat_wizard(data: ChatRequestSchema, db: Session = Depends(get_db), x_gemini
                 citations.append({
                     "name": doc["document_name"],
                     "type": doc["document_type"],
-                    "title": doc["title"]
+                    "title": doc["title"],
+                    "snippet": doc["text"][:220]  # First 220 chars of retrieved chunk text
                 })
             prompt_lines.append("=======================================")
             evidence_text = "\n".join(prompt_lines)

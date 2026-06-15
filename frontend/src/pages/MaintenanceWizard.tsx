@@ -13,8 +13,8 @@ const MaintenanceWizard: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(false);
   const [citationsList, setCitationsList] = useState<Record<number, ChatCitation[]>>({});
   
-  // Modal for displaying citation content (mock lookup for clean UI)
-  const [selectedCitation, setSelectedCitation] = useState<string | null>(null);
+  // Holds the full citation object so the modal can show the real retrieved snippet
+  const [selectedCitation, setSelectedCitation] = useState<ChatCitation | null>(null);
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
@@ -182,7 +182,7 @@ const MaintenanceWizard: React.FC = () => {
                       {citations.map((cit, cidx) => (
                         <button
                           key={cidx}
-                          onClick={() => setSelectedCitation(cit.name)}
+                          onClick={() => setSelectedCitation(cit)}
                           style={{
                             display: 'inline-flex',
                             alignItems: 'center',
@@ -265,11 +265,20 @@ const MaintenanceWizard: React.FC = () => {
           <div className="modal-content glass-panel" onClick={(e) => e.stopPropagation()} style={{ maxWidth: '500px' }}>
             <h3 style={{ fontSize: '1.15rem', color: 'var(--text-primary)', marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '8px' }}>
               <FileText size={18} color="var(--info)" />
-              Citing Source: {selectedCitation}
+              Citing Source: {selectedCitation.name}
             </h3>
-            
-            <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: '1.5', fontStyle: 'italic', marginBottom: '24px', background: 'rgba(0,0,0,0.15)', padding: '16px', borderRadius: '6px' }}>
-              "Standard procedures check-list rules loaded from the local plant database document. Verify that safety checks (LOTO) have been executed. Compatible spare parts replaced: grease filters and bear couplings."
+
+            {selectedCitation.title && (
+              <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+                {selectedCitation.type} — {selectedCitation.title}
+              </p>
+            )}
+
+            <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: '1.55', fontStyle: 'italic', marginBottom: '24px', background: 'rgba(0,0,0,0.15)', padding: '16px', borderRadius: '6px' }}>
+              {selectedCitation.snippet
+                ? `"${selectedCitation.snippet}${selectedCitation.snippet.length >= 220 ? '…' : '"'}`
+                : '"Document chunk retrieved from the local plant knowledge base. Verify LOTO and maintenance safety checks before acting on referenced procedures."'
+              }
             </p>
 
             <div style={{ textAlign: 'right' }}>

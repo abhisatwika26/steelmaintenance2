@@ -1,9 +1,10 @@
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, Header
 from sqlalchemy.orm import Session
 from pydantic import BaseModel
 import pandas as pd
 import uuid
 from datetime import datetime
+from typing import Optional
 from backend.db.database import get_db
 from backend.db.models import AnomalyAlert, MaintenanceLog
 from backend.agents.maintenance_orchestrator import MaintenanceOrchestrator
@@ -22,7 +23,7 @@ class LogbookEntryCreateSchema(BaseModel):
     technician_notes: str = ""
 
 @router.get("/preview/{alert_id}")
-def preview_failure_report(alert_id: int, db: Session = Depends(get_db)):
+def preview_failure_report(alert_id: int, db: Session = Depends(get_db), x_gemini_key: Optional[str] = Header(None)):
     """
     Invokes Gemini to draft a formal failure report based on the alert's
     RCA diagnosis and action checklist.
@@ -41,7 +42,7 @@ def preview_failure_report(alert_id: int, db: Session = Depends(get_db)):
             if not match.empty:
                 telemetry = match.iloc[0].to_dict()
                 
-        orchestrator = MaintenanceOrchestrator(db)
+        orchestrator = MaintenanceOrchestrator(db, api_key=x_gemini_key)
         
         # Run diagnostic flow to get diagnosis and recommendation details
         rca_report = orchestrator.run_diagnostic_flow(alert.equipment_id, telemetry)

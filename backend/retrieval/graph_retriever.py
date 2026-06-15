@@ -1,58 +1,24 @@
+import json
+from pathlib import Path
+
+# Locate the failure modes JSON relative to this file's position in the package
+_FAILURE_MODES_FILE = Path(__file__).resolve().parents[2] / "data" / "raw" / "failure_modes.json"
+
 class GraphRetriever:
     def __init__(self):
-        # In-memory graph nodes and edges representing:
-        # FailureMode -> requires -> SparePart
-        # FailureMode -> resolved_by -> SOP
-        self.graph = {
-            "FM-001": {
-                "name": "Bearing Wear",
-                "sop_slug": "SOP_bearing_replacement",
-                "sop_title": "Bearing Replacement and Vibration Response",
-                "required_parts": ["SP-BEAR-001", "SP-GREASE-001"],
-                "symptoms": "rising vibration and abnormal bearing noise",
-                "root_cause": "progressive bearing wear caused by lubrication degradation"
-            },
-            "FM-002": {
-                "name": "Hydraulic Leakage",
-                "sop_slug": "SOP_hydraulic_pump_overheating",
-                "sop_title": "Hydraulic Pump Overheating and Pressure Loss",
-                "required_parts": ["SP-SEAL-001", "SP-FILTER-001"],
-                "symptoms": "pressure drop with increasing pump temperature",
-                "root_cause": "seal wear or suction-side leakage reducing hydraulic pressure"
-            },
-            "FM-003": {
-                "name": "Motor Overload",
-                "sop_slug": "SOP_motor_overload_trip",
-                "sop_title": "Motor Overload Trip Response",
-                "required_parts": ["SP-CONTACTOR-001", "SP-FUSE-001"],
-                "symptoms": "current spike and repeated overload trip",
-                "root_cause": "mechanical load increase or phase imbalance causing motor overload"
-            },
-            "FM-004": {
-                "name": "Cooling Flow Restriction",
-                "sop_slug": "SOP_cooling_flow_drop",
-                "sop_title": "Cooling Water Flow Drop Response",
-                "required_parts": ["SP-FILTER-002", "SP-GASKET-001"],
-                "symptoms": "temperature rise with reduced coolant flow",
-                "root_cause": "cooling line blockage or pump strainer fouling"
-            },
-            "FM-005": {
-                "name": "Gearbox Misalignment",
-                "sop_slug": "SOP_gearbox_vibration_inspection",
-                "sop_title": "Gearbox Vibration Inspection",
-                "required_parts": ["SP-COUPLING-001", "SP-BOLT-001"],
-                "symptoms": "high vibration during load changes",
-                "root_cause": "coupling misalignment transferring shock load into gearbox bearings"
-            },
-            "FM-006": {
-                "name": "Lubrication Failure",
-                "sop_slug": "SOP_lubrication_failure_response",
-                "sop_title": "Lubrication Failure Response",
-                "required_parts": ["SP-OIL-001", "SP-FILTER-003"],
-                "symptoms": "oil level drop with heat buildup",
-                "root_cause": "low oil level or blocked lubrication line reducing film strength"
-            }
-        }
+        # Load failure mode graph from JSON file instead of hardcoding inline.
+        # This makes the knowledge base extensible without code changes — add new
+        # failure modes by editing data/raw/failure_modes.json directly.
+        self.graph = {}
+        try:
+            if _FAILURE_MODES_FILE.exists():
+                with open(_FAILURE_MODES_FILE, "r", encoding="utf-8") as f:
+                    self.graph = json.load(f)
+                print(f"GraphRetriever: Loaded {len(self.graph)} failure modes from {_FAILURE_MODES_FILE.name}")
+            else:
+                print(f"GraphRetriever: WARNING — failure_modes.json not found at {_FAILURE_MODES_FILE}. Graph retrieval will return empty results.")
+        except Exception as e:
+            print(f"GraphRetriever: ERROR loading failure_modes.json ({e}). Falling back to empty graph.")
 
     def get_failure_mode_relations(self, failure_code: str) -> dict:
         """
@@ -68,3 +34,4 @@ class GraphRetriever:
             if name.lower() in details["name"].lower():
                 return code
         return None
+

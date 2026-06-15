@@ -76,8 +76,27 @@ class AnomalyService:
 
     def predict_rul(self, equipment_id: str, current_health: float) -> str:
         """
-        Predicts the Remaining Useful Life (RUL) of the equipment by analyzing
-        the trend of its Health Index over the last 24 hours (96 readings).
+        Estimates the Remaining Useful Life (RUL) of the equipment by analysing
+        the linear degradation trend of the Health Index over the last 24 hours
+        (96 readings at a 15-minute interval cadence).
+
+        IMPORTANT — Model Transparency:
+        This is a linear-trend degradation estimator, NOT a physics-based or
+        supervised-regression RUL model. It:
+          1. Computes Isolation Forest Health Index for the last 96 sensor rows.
+          2. Fits a linear regression (numpy polyfit, degree=1) to the health trend.
+          3. Projects how many readings remain until health drops to the critical
+             threshold of 0.20 (80% degraded), then converts readings → hours → days.
+
+        Assumptions:
+          - Sensor readings are spaced 15 minutes apart (hardcoded: readings_remaining * 15 / 60).
+          - Degradation is approximately linear over the 24-hour window.
+          - Health index == 1.0 means fully healthy; 0.0 means fully degraded.
+
+        Limitation:
+          Non-linear failure patterns (e.g. rapid sudden failure, bathtub curve) will
+          cause underestimation or overestimation of RUL. Use as a leading indicator
+          only; always combine with engineer judgement and physical inspection.
         """
         try:
             sensor_file = config.RAW_DIR / "sensor_data" / "sensor_readings.csv"

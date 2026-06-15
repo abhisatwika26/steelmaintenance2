@@ -105,6 +105,7 @@ export interface ChatCitation {
   name: string;
   type: string;
   title: string;
+  snippet?: string;  // First ~220 chars of the retrieved document chunk
 }
 
 export interface ChatResponse {

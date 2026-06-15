@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
 from sqlalchemy import desc
-from backend.db.models import EquipmentMaster, MaintenanceLog, DelayLog, SparePart
+from backend.db.models import EquipmentMaster, MaintenanceLog, DelayLog, SparePart, EngineerFeedback
 
 class SQLRetriever:
     def __init__(self, db: Session):
@@ -97,3 +97,26 @@ class SQLRetriever:
                 })
                 
         return compatible_spares
+
+    def get_feedback_history(self, equipment_id: str) -> list[dict]:
+        """
+        Retrieves the last 5 engineer feedback entries for a given equipment.
+        Used to inject past corrections and outcomes into future LLM evidence prompts,
+        closing the feedback-driven improvement loop (§6.6) without any extra API calls.
+        """
+        feedback_logs = self.db.query(EngineerFeedback)\
+            .filter(EngineerFeedback.equipment_id == equipment_id)\
+            .order_by(desc(EngineerFeedback.feedback_id))\
+            .limit(5).all()
+
+        results = []
+        for fb in feedback_logs:
+            results.append({
+                "feedback_id": fb.feedback_id,
+                "submitted_by": fb.submitted_by,
+                "rating": fb.rating,
+                "actual_outcome": fb.actual_outcome,
+                "correction_notes": fb.correction_notes or ""
+            })
+        return results
+

@@ -92,3 +92,40 @@ def get_risk_heatmap_data(db: Session = Depends(get_db)):
         return results
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error generating risk heatmap: {e}")
+
+@router.get("/sensor-history/{equipment_id}")
+def get_sensor_history(equipment_id: str, last_n: int = 48, db: Session = Depends(get_db)):
+    """
+    Returns the last N sensor readings for a given equipment from the sensor CSV log.
+    Used by SensorTrendChart to render real time-series health trend data.
+    No LLM calls — pure CSV read and filter.
+    """
+    sensor_file = config.RAW_DIR / "sensor_data" / "sensor_readings.csv"
+    if not sensor_file.exists():
+        raise HTTPException(status_code=404, detail="Sensor telemetry log not found")
+
+    try:
+        df = pd.read_csv(sensor_file)
+        eq_df = df[df["equipment_id"] == equipment_id].tail(last_n)
+
+        if eq_df.empty:
+            raise HTTPException(status_code=404, detail=f"No sensor readings found for equipment {equipment_id}")
+
+        # Return as list of dicts; keep only the core telemetry columns plus timestamp
+        columns_to_return = [
+            "timestamp", "temperature_c", "vibration_mm_s", "pressure_bar",
+            "rpm", "current_amp", "coolant_flow_lpm", "operating_load_pct",
+            "anomaly_label"
+        ]
+        available_cols = [c for c in columns_to_return if c in eq_df.columns]
+        records = eq_df[available_cols].to_dict(orient="records")
+        return {
+            "equipment_id": equipment_id,
+            "count": len(records),
+            "readings": records
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error fetching sensor history: {e}")
+
