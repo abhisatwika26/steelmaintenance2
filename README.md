@@ -14,7 +14,7 @@ The platform uses a decoupled frontend-backend architecture integrated with a mu
 graph TB
     %% Offline Pipelines (Offline / Build-Time Setup)
     subgraph Offline [Offline Setup & Training Pipeline]
-        style Offline fill:#f9fafb,stroke:#d1d5db,stroke-width:1px,stroke-dasharray: 5 5
+        style Offline fill:#f9fafb,stroke:#4b5563,stroke-width:2px
         OP1[Raw Manuals/SOPs] -->|ingest_documents.py| OP2[(Vector Store Index)]
         OP3[Raw Data Generators] -->|seed_database.py| OP4[(SQLite Database)]
         OP3 -->|train_anomaly_model.py| OP5[Isolation Forest Model]
@@ -25,7 +25,7 @@ graph TB
         
         %% Presentation Layer
         subgraph Client [Client Presentation Layer - React / Vite]
-            style Client fill:#eff6ff,stroke:#bfdbfe,stroke-width:1px
+            style Client fill:#eff6ff,stroke:#2563eb,stroke-width:2px
             UI_Dash[Dashboard & Alerts Feed]
             UI_Chat[Diagnostic Chat Console]
             UI_Admin[Inventory & Spares View]
@@ -33,18 +33,18 @@ graph TB
 
         %% Backend Services
         subgraph Backend [FastAPI Backend Service]
-            style Backend fill:#f0fdf4,stroke:#bbf7d0,stroke-width:1px
+            style Backend fill:#f0fdf4,stroke:#16a34a,stroke-width:2px
             API_R[FastAPI App & Routers]
             
             subgraph ML_Eng [Predictive & Scoring Engine]
-                style ML_Eng fill:#ffffff,stroke:#86efac,stroke-width:1px
+                style ML_Eng fill:#ffffff,stroke:#059669,stroke-width:2px
                 IF_Inf[Anomaly Detection Inference]
                 RUL_Est[RUL Regression Solver]
                 Risk_Pri[Risk Priority Scorer]
             end
             
             subgraph RAG_Eng [Orchestration & Reasoning Agent]
-                style RAG_Eng fill:#ffffff,stroke:#a78bfa,stroke-width:1px
+                style RAG_Eng fill:#ffffff,stroke:#7c3aed,stroke-width:2px
                 Agent_O[Maintenance Orchestrator]
                 Retr_H[Hybrid Retriever]
             end
@@ -52,7 +52,7 @@ graph TB
 
         %% Storage / Knowledge Base
         subgraph Storage [Knowledge & Persistence Layer]
-            style Storage fill:#fff7ed,stroke:#fed7aa,stroke-width:1px
+            style Storage fill:#fff7ed,stroke:#ea580c,stroke-width:2px
             DB[(SQLite DB)]
             KB[Failure Mode Graph]
             VS[(Vector Store)]
@@ -60,9 +60,9 @@ graph TB
 
         %% External LLM Service
         subgraph AI_Model [AI Inference Provider]
-            style AI_Model fill:#faf5ff,stroke:#e9d5ff,stroke-width:1px
+            style AI_Model fill:#faf5ff,stroke:#9333ea,stroke-width:2px
             Gemini_Client[Google GenAI Client]
-            Gemini[Gemini 2.5 / 3.5 Models]
+            Gemini[Gemini 2.5 Flash API]
         end
     end
 
@@ -89,9 +89,9 @@ graph TB
     Gemini_Client <-->|Secure HTTPS API Call| Gemini
 
     %% Link Offline assets to runtime
-    OP5 -.->|Injected Model File| IF_Inf
-    OP4 -.->|Seeded SQLite DB| DB
-    OP2 -.->|Pickled Index| VS
+    OP5 -->|Injected Model File| IF_Inf
+    OP4 -->|Seeded SQLite DB| DB
+    OP2 -->|Pickled Index| VS
 ```
 
 ---
