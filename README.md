@@ -11,54 +11,87 @@ The system continuously monitors multidimensional sensor telemetry, calculates o
 The platform uses a decoupled frontend-backend architecture integrated with a multi-layered data retriever and a structured AI reasoning model.
 
 ```mermaid
-graph TD
-    %% Frontend Layer
-    subgraph UI [Frontend - React + Vite]
-        A[Dashboard & Alert Feed]
-        B[Interactive Diagnosis Chat]
-        C[Spares & Reports Console]
+graph TB
+    %% Offline Pipelines (Offline / Build-Time Setup)
+    subgraph Offline [Offline Setup & Training Pipeline]
+        style Offline fill:#f9fafb,stroke:#d1d5db,stroke-width:1px,stroke-dasharray: 5 5
+        OP1[Raw Manuals/SOPs] -->|ingest_documents.py| OP2[(Vector Store Index)]
+        OP3[Raw Data Generators] -->|seed_database.py| OP4[(SQLite Database)]
+        OP3 -->|train_anomaly_model.py| OP5[Isolation Forest Model]
     end
 
-    %% Backend Layer
-    subgraph API [Backend Services - FastAPI]
-        D[FastAPI Router]
-        E[Anomaly Service]
-        F[Risk Prioritization Scorer]
-        G[Maintenance Orchestrator Agent]
+    %% Online Live System Architecture
+    subgraph Online [Online Runtime Architecture]
+        
+        %% Presentation Layer
+        subgraph Client [Client Presentation Layer - React / Vite]
+            style Client fill:#eff6ff,stroke:#bfdbfe,stroke-width:1px
+            UI_Dash[Dashboard & Alerts Feed]
+            UI_Chat[Diagnostic Chat Console]
+            UI_Admin[Inventory & Spares View]
+        end
+
+        %% Backend Services
+        subgraph Backend [FastAPI Backend Service]
+            style Backend fill:#f0fdf4,stroke:#bbf7d0,stroke-width:1px
+            API_R[FastAPI App & Routers]
+            
+            subgraph ML_Eng [Predictive & Scoring Engine]
+                style ML_Eng fill:#ffffff,stroke:#86efac,stroke-width:1px
+                IF_Inf[Anomaly Detection Inference]
+                RUL_Est[RUL Regression Solver]
+                Risk_Pri[Risk Priority Scorer]
+            end
+            
+            subgraph RAG_Eng [Orchestration & Reasoning Agent]
+                style RAG_Eng fill:#ffffff,stroke:#a78bfa,stroke-width:1px
+                Agent_O[Maintenance Orchestrator]
+                Retr_H[Hybrid Retriever]
+            end
+        end
+
+        %% Storage / Knowledge Base
+        subgraph Storage [Knowledge & Persistence Layer]
+            style Storage fill:#fff7ed,stroke:#fed7aa,stroke-width:1px
+            DB[(SQLite DB)]
+            KB[Failure Mode Graph]
+            VS[(Vector Store)]
+        end
+
+        %% External LLM Service
+        subgraph AI_Model [AI Inference Provider]
+            style AI_Model fill:#faf5ff,stroke:#e9d5ff,stroke-width:1px
+            Gemini_Client[Google GenAI Client]
+            Gemini[Gemini 2.5 / 3.5 Models]
+        end
     end
 
-    %% Data Retrieval Layer
-    subgraph Retrieval [Hybrid Retrieval & Storage Engine]
-        H[(SQLite DB - SQLRetriever)]
-        I[In-Memory Failure Mode Graph - GraphRetriever]
-        J[Vector Store - VectorStore]
-    end
+    %% Connections - Client to Backend
+    Client <-->|HTTP REST Requests / JSON| API_R
 
-    %% AI Model Layer
-    subgraph Reasoning [AI Inference Engine]
-        K[Gemini Model - structured JSON outputs]
-    end
+    %% Connections - Telemetry Flow
+    API_R -->|Intake Sensor Readings| IF_Inf
+    IF_Inf -->|Anomaly Score & Health Index| RUL_Est
+    RUL_Est & IF_Inf -->|Real-Time Predictions| Risk_Pri
+    Risk_Pri -->|Save Alerts / Logs| DB
 
-    %% Connections
-    UI <-->|HTTP REST / JSON| API
-    E -->|Isolation Forest / numpy| D
-    F -->|Risk Priority Formula| D
-    G -->|Hybrid retriever coordination| Retrieval
-    G <-->|Prompt chaining + Schemas| Reasoning
+    %% Connections - Chat & RAG
+    API_R <-->|Chat Prompts / Diagnostic Queries| Agent_O
+    Agent_O <-->|Coordinate Retrieval| Retr_H
     
-    %% Storage access
-    H -.->|Asset Specs, Logs, Spares| G
-    I -.->|Failure Mode Symptoms & SOP links| G
-    J -.->|Semantically relevant manual chunks| G
-    
-    classDef ui fill:#4f46e5,stroke:#312e81,color:#fff;
-    classDef api fill:#0ea5e9,stroke:#0369a1,color:#fff;
-    classDef db fill:#10b981,stroke:#065f46,color:#fff;
-    classDef ai fill:#8b5cf6,stroke:#5b21b6,color:#fff;
-    class A,B,C ui;
-    class D,E,F,G api;
-    class H,I,J db;
-    class K ai;
+    %% Hybrid Retrieval connections
+    Retr_H -->|SQL Queries| DB
+    Retr_H -->|Graph Edge Lookup| KB
+    Retr_H -->|Semantic Search Queries| VS
+
+    %% Connections - Reasoning & Structured Outputs
+    Agent_O <-->|Structured Prompts & Pydantic Schemas| Gemini_Client
+    Gemini_Client <-->|Secure HTTPS API Call| Gemini
+
+    %% Link Offline assets to runtime
+    OP5 -.->|Injected Model File| IF_Inf
+    OP4 -.->|Seeded SQLite DB| DB
+    OP2 -.->|Pickled Index| VS
 ```
 
 ---
