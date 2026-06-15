@@ -10,6 +10,7 @@ The system continuously monitors multidimensional sensor telemetry, calculates o
 
 The platform uses a decoupled frontend-backend architecture integrated with a multi-layered data retriever and a structured AI reasoning model.
 
+```mermaid
 graph TB
     %% Offline Pipelines (Offline / Build-Time Setup)
     subgraph Offline [Offline Setup & Training Pipeline]
@@ -91,6 +92,7 @@ graph TB
     OP5 -->|Injected Model File| IF_Inf
     OP4 -->|Seeded SQLite DB| DB
     OP2 -->|Pickled Index| VS
+```
 
 
 ---
