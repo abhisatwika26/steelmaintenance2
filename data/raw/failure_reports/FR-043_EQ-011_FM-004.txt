@@ -1,0 +1,23 @@
+Failure Report: FR-043
+Equipment ID: EQ-011
+Equipment Name: Lubrication Pump
+Plant Area: Hot Rolling Mill
+Failure Mode: Cooling Flow Restriction
+Fault Code: FM-004
+Event Time: 2026-05-27T06:00
+Severity: High
+
+Observed Symptoms:
+The maintenance team observed temperature rise with reduced coolant flow. Sensor history around the event showed abnormal behavior compared with the normal operating band for this asset.
+
+Root Cause:
+cooling line blockage or pump strainer fouling.
+
+Corrective Action:
+flush cooling line, clean strainer, verify flow rate before releasing equipment. The required spare references were SP-FILTER-002, SP-GASKET-001.
+
+Downtime:
+Total equipment delay was 148 minutes.
+
+Lessons Learned:
+Future alerts should combine anomaly score, equipment criticality, recent maintenance history, and spare availability before assigning intervention priority.

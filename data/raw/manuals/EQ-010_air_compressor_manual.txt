@@ -1,0 +1,16 @@
+Equipment Manual: Air Compressor
+
+Equipment ID: EQ-010
+Plant Area: Utilities
+Equipment Type: Compressor
+Criticality: High
+
+Normal Operating Bands:
+Temperature: 68.0 C to 86.0 C
+Vibration: 0.5 mm/s to 5.3 mm/s
+Pressure: 160.0 bar to 210.0 bar
+Current: 72.0 A to 120.0 A
+Coolant Flow: 50.0 lpm to 90.0 lpm
+
+Maintenance Notes:
+This asset should be monitored for temperature rise, vibration increase, abnormal current draw, and process delay impact. Critical assets require immediate review when anomaly score is high.

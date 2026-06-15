@@ -1,0 +1,16 @@
+Equipment Manual: Cooling Tower Fan
+
+Equipment ID: EQ-012
+Plant Area: Utilities
+Equipment Type: Fan
+Criticality: Medium
+
+Normal Operating Bands:
+Temperature: 49.0 C to 67.0 C
+Vibration: 0.5 mm/s to 4.9 mm/s
+Pressure: 0.0 bar to 25.0 bar
+Current: 39.0 A to 65.0 A
+Coolant Flow: 76.0 lpm to 116.0 lpm
+
+Maintenance Notes:
+This asset should be monitored for temperature rise, vibration increase, abnormal current draw, and process delay impact. Critical assets require immediate review when anomaly score is high.

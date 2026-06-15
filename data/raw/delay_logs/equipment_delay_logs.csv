@@ -1,0 +1,301 @@
+delay_id,equipment_id,delay_start,delay_minutes,delay_category,production_impact,remarks
+DL-0001,EQ-012,2026-05-03T04:15,11,Cooling Flow Restriction,Moderate,Delay caused by temperature rise with reduced coolant flow.
+DL-0002,EQ-012,2026-05-03T19:30,53,Bearing Wear,Moderate,Delay caused by rising vibration and abnormal bearing noise.
+DL-0003,EQ-001,2026-05-04T02:45,63,Hydraulic Leakage,Moderate,Delay caused by pressure drop with increasing pump temperature.
+DL-0004,EQ-004,2026-05-05T03:15,169,Lubrication Failure,Severe,Delay caused by oil level drop with heat buildup.
+DL-0005,EQ-004,2026-05-05T09:15,131,Gearbox Misalignment,Minor,Delay caused by high vibration during load changes.
+DL-0006,EQ-010,2026-05-05T17:30,287,Bearing Wear,Moderate,Delay caused by rising vibration and abnormal bearing noise.
+DL-0007,EQ-007,2026-05-06T06:45,158,Cooling Flow Restriction,Minor,Delay caused by temperature rise with reduced coolant flow.
+DL-0008,EQ-012,2026-05-06T09:45,79,Bearing Wear,Moderate,Delay caused by rising vibration and abnormal bearing noise.
+DL-0009,EQ-003,2026-05-06T13:15,172,Gearbox Misalignment,Severe,Delay caused by high vibration during load changes.
+DL-0010,EQ-003,2026-05-06T14:00,140,Bearing Wear,Moderate,Delay caused by rising vibration and abnormal bearing noise.
+DL-0011,EQ-006,2026-05-07T10:15,148,Cooling Flow Restriction,Minor,Delay caused by temperature rise with reduced coolant flow.
+DL-0012,EQ-009,2026-05-08T16:30,255,Motor Overload,Severe,Delay caused by current spike and repeated overload trip.
+DL-0013,EQ-005,2026-05-08T19:00,173,Cooling Flow Restriction,Minor,Delay caused by temperature rise with reduced coolant flow.
+DL-0014,EQ-009,2026-05-09T06:45,46,Bearing Wear,Minor,Delay caused by rising vibration and abnormal bearing noise.
+DL-0015,EQ-005,2026-05-09T10:30,251,Hydraulic Leakage,Moderate,Delay caused by pressure drop with increasing pump temperature.
+DL-0016,EQ-003,2026-05-09T12:45,159,Bearing Wear,Minor,Delay caused by rising vibration and abnormal bearing noise.
+DL-0017,EQ-006,2026-05-09T20:00,53,Bearing Wear,Minor,Delay caused by rising vibration and abnormal bearing noise.
+DL-0018,EQ-010,2026-05-10T03:45,81,Bearing Wear,Severe,Delay caused by rising vibration and abnormal bearing noise.
+DL-0019,EQ-012,2026-05-10T04:00,52,Bearing Wear,Moderate,Delay caused by rising vibration and abnormal bearing noise.
+DL-0020,EQ-001,2026-05-10T09:00,42,Cooling Flow Restriction,Minor,Delay caused by temperature rise with reduced coolant flow.
+DL-0021,EQ-009,2026-05-11T18:00,83,Motor Overload,Minor,Delay caused by current spike and repeated overload trip.
+DL-0022,EQ-005,2026-05-15T10:30,165,Cooling Flow Restriction,Moderate,Delay caused by temperature rise with reduced coolant flow.
+DL-0023,EQ-011,2026-05-15T13:45,152,Bearing Wear,Minor,Delay caused by rising vibration and abnormal bearing noise.
+DL-0024,EQ-008,2026-05-16T04:00,269,Motor Overload,Minor,Delay caused by current spike and repeated overload trip.
+DL-0025,EQ-011,2026-05-16T08:45,131,Cooling Flow Restriction,Severe,Delay caused by temperature rise with reduced coolant flow.
+DL-0026,EQ-007,2026-05-16T14:45,40,Gearbox Misalignment,Moderate,Delay caused by high vibration during load changes.
+DL-0027,EQ-004,2026-05-17T13:30,146,Gearbox Misalignment,Moderate,Delay caused by high vibration during load changes.
+DL-0028,EQ-008,2026-05-17T18:45,83,Motor Overload,Minor,Delay caused by current spike and repeated overload trip.
+DL-0029,EQ-010,2026-05-18T02:30,167,Bearing Wear,Moderate,Delay caused by rising vibration and abnormal bearing noise.
+DL-0030,EQ-002,2026-05-19T02:45,268,Cooling Flow Restriction,Severe,Delay caused by temperature rise with reduced coolant flow.
+DL-0031,EQ-007,2026-05-19T17:45,55,Bearing Wear,Moderate,Delay caused by rising vibration and abnormal bearing noise.
+DL-0032,EQ-011,2026-05-20T07:15,265,Lubrication Failure,Moderate,Delay caused by oil level drop with heat buildup.
+DL-0033,EQ-010,2026-05-20T18:45,143,Bearing Wear,Severe,Delay caused by rising vibration and abnormal bearing noise.
+DL-0034,EQ-007,2026-05-20T19:00,167,Gearbox Misalignment,Moderate,Delay caused by high vibration during load changes.
+DL-0035,EQ-002,2026-05-21T10:45,60,Motor Overload,Severe,Delay caused by current spike and repeated overload trip.
+DL-0036,EQ-001,2026-05-23T05:30,158,Hydraulic Leakage,Severe,Delay caused by pressure drop with increasing pump temperature.
+DL-0037,EQ-009,2026-05-23T11:30,275,Cooling Flow Restriction,Minor,Delay caused by temperature rise with reduced coolant flow.
+DL-0038,EQ-006,2026-05-23T17:45,60,Motor Overload,Minor,Delay caused by current spike and repeated overload trip.
+DL-0039,EQ-002,2026-05-23T19:15,133,Bearing Wear,Severe,Delay caused by rising vibration and abnormal bearing noise.
+DL-0040,EQ-008,2026-05-24T05:30,138,Bearing Wear,Severe,Delay caused by rising vibration and abnormal bearing noise.
+DL-0041,EQ-001,2026-05-24T19:15,131,Hydraulic Leakage,Severe,Delay caused by pressure drop with increasing pump temperature.
+DL-0042,EQ-002,2026-05-25T15:30,61,Bearing Wear,Moderate,Delay caused by rising vibration and abnormal bearing noise.
+DL-0043,EQ-011,2026-05-27T06:00,148,Cooling Flow Restriction,Moderate,Delay caused by temperature rise with reduced coolant flow.
+DL-0044,EQ-008,2026-05-27T12:45,171,Cooling Flow Restriction,Moderate,Delay caused by temperature rise with reduced coolant flow.
+DL-0045,EQ-003,2026-05-28T03:15,270,Cooling Flow Restriction,Moderate,Delay caused by temperature rise with reduced coolant flow.
+DL-0046,EQ-006,2026-05-28T12:00,38,Motor Overload,Minor,Delay caused by current spike and repeated overload trip.
+DL-0047,EQ-005,2026-05-29T03:45,80,Cooling Flow Restriction,Minor,Delay caused by temperature rise with reduced coolant flow.
+DL-0048,EQ-004,2026-05-29T13:30,266,Lubrication Failure,Severe,Delay caused by oil level drop with heat buildup.
+DL-0049,EQ-003,2026-05-11T01:30,12,Inspection,Moderate,Delay log associated with Blast Furnace Blower.
+DL-0050,EQ-009,2026-05-27T02:30,18,Planned maintenance,Severe,Delay log associated with Scale Breaker Motor.
+DL-0051,EQ-004,2026-05-03T19:30,58,Process hold,Severe,Delay log associated with Ladle Crane Gearbox.
+DL-0052,EQ-012,2026-05-19T04:30,72,Inspection,Severe,Delay log associated with Cooling Tower Fan.
+DL-0053,EQ-008,2026-06-12T19:00,62,Process hold,Severe,Delay log associated with Reheat Furnace Burner.
+DL-0054,EQ-011,2026-06-19T14:00,145,Planned maintenance,Severe,Delay log associated with Lubrication Pump.
+DL-0055,EQ-006,2026-06-23T11:00,109,Process hold,Minor,Delay log associated with Conveyor Drive Unit.
+DL-0056,EQ-004,2026-05-02T17:30,94,Process hold,Moderate,Delay log associated with Ladle Crane Gearbox.
+DL-0057,EQ-012,2026-05-26T11:00,89,Planned maintenance,Moderate,Delay log associated with Cooling Tower Fan.
+DL-0058,EQ-008,2026-06-01T13:45,68,Cooling Flow Restriction,Minor,Delay log associated with Reheat Furnace Burner.
+DL-0059,EQ-012,2026-06-17T14:00,48,Planned maintenance,Minor,Delay log associated with Cooling Tower Fan.
+DL-0060,EQ-006,2026-05-08T04:00,10,Planned maintenance,Severe,Delay log associated with Conveyor Drive Unit.
+DL-0061,EQ-005,2026-05-01T03:45,133,Planned maintenance,Severe,Delay log associated with Cooling Water Pump.
+DL-0062,EQ-004,2026-05-29T08:30,150,Process hold,Minor,Delay log associated with Ladle Crane Gearbox.
+DL-0063,EQ-002,2026-05-04T07:00,75,Inspection,Severe,Delay log associated with Rolling Mill Main Motor.
+DL-0064,EQ-009,2026-05-07T23:00,89,Process hold,Moderate,Delay log associated with Scale Breaker Motor.
+DL-0065,EQ-006,2026-05-29T03:00,40,Inspection,Severe,Delay log associated with Conveyor Drive Unit.
+DL-0066,EQ-012,2026-06-15T01:45,8,Bearing Wear,Minor,Delay log associated with Cooling Tower Fan.
+DL-0067,EQ-005,2026-06-20T20:45,9,Inspection,Moderate,Delay log associated with Cooling Water Pump.
+DL-0068,EQ-008,2026-05-24T12:30,131,Planned maintenance,Severe,Delay log associated with Reheat Furnace Burner.
+DL-0069,EQ-002,2026-06-16T14:45,49,Planned maintenance,Minor,Delay log associated with Rolling Mill Main Motor.
+DL-0070,EQ-012,2026-05-13T08:30,120,Inspection,Moderate,Delay log associated with Cooling Tower Fan.
+DL-0071,EQ-012,2026-06-13T20:45,64,Process hold,Minor,Delay log associated with Cooling Tower Fan.
+DL-0072,EQ-012,2026-05-09T00:30,75,Gearbox Misalignment,Minor,Delay log associated with Cooling Tower Fan.
+DL-0073,EQ-005,2026-05-01T10:45,113,Inspection,Minor,Delay log associated with Cooling Water Pump.
+DL-0074,EQ-005,2026-06-02T09:00,19,Bearing Wear,Moderate,Delay log associated with Cooling Water Pump.
+DL-0075,EQ-011,2026-05-21T13:00,155,Inspection,Severe,Delay log associated with Lubrication Pump.
+DL-0076,EQ-011,2026-06-30T08:30,72,Inspection,Moderate,Delay log associated with Lubrication Pump.
+DL-0077,EQ-007,2026-05-03T15:45,28,Bearing Wear,Moderate,Delay log associated with Dust Collector Fan.
+DL-0078,EQ-008,2026-05-18T14:15,90,Process hold,Moderate,Delay log associated with Reheat Furnace Burner.
+DL-0079,EQ-001,2026-05-07T15:30,133,Process hold,Moderate,Delay log associated with Caster Hydraulic Pump.
+DL-0080,EQ-006,2026-06-14T22:30,152,Planned maintenance,Moderate,Delay log associated with Conveyor Drive Unit.
+DL-0081,EQ-012,2026-06-02T14:30,79,Inspection,Moderate,Delay log associated with Cooling Tower Fan.
+DL-0082,EQ-005,2026-05-12T06:45,33,Inspection,Minor,Delay log associated with Cooling Water Pump.
+DL-0083,EQ-012,2026-06-08T07:45,46,Planned maintenance,Moderate,Delay log associated with Cooling Tower Fan.
+DL-0084,EQ-002,2026-05-13T12:45,103,Planned maintenance,Moderate,Delay log associated with Rolling Mill Main Motor.
+DL-0085,EQ-006,2026-06-04T19:45,20,Bearing Wear,Severe,Delay log associated with Conveyor Drive Unit.
+DL-0086,EQ-001,2026-06-05T10:15,44,Hydraulic Leakage,Severe,Delay log associated with Caster Hydraulic Pump.
+DL-0087,EQ-007,2026-05-26T00:00,53,Inspection,Minor,Delay log associated with Dust Collector Fan.
+DL-0088,EQ-007,2026-05-09T19:00,115,Cooling Flow Restriction,Severe,Delay log associated with Dust Collector Fan.
+DL-0089,EQ-002,2026-05-28T06:45,65,Process hold,Severe,Delay log associated with Rolling Mill Main Motor.
+DL-0090,EQ-010,2026-06-27T00:00,153,Cooling Flow Restriction,Moderate,Delay log associated with Air Compressor.
+DL-0091,EQ-005,2026-06-12T09:00,110,Process hold,Minor,Delay log associated with Cooling Water Pump.
+DL-0092,EQ-003,2026-06-16T21:45,50,Process hold,Moderate,Delay log associated with Blast Furnace Blower.
+DL-0093,EQ-004,2026-06-29T21:15,84,Bearing Wear,Moderate,Delay log associated with Ladle Crane Gearbox.
+DL-0094,EQ-005,2026-06-14T01:30,42,Lubrication Failure,Minor,Delay log associated with Cooling Water Pump.
+DL-0095,EQ-005,2026-05-22T02:00,48,Hydraulic Leakage,Moderate,Delay log associated with Cooling Water Pump.
+DL-0096,EQ-002,2026-05-27T19:30,93,Inspection,Minor,Delay log associated with Rolling Mill Main Motor.
+DL-0097,EQ-006,2026-06-06T23:00,78,Motor Overload,Moderate,Delay log associated with Conveyor Drive Unit.
+DL-0098,EQ-004,2026-06-20T21:15,70,Planned maintenance,Moderate,Delay log associated with Ladle Crane Gearbox.
+DL-0099,EQ-007,2026-05-10T19:00,13,Cooling Flow Restriction,Minor,Delay log associated with Dust Collector Fan.
+DL-0100,EQ-004,2026-06-25T01:45,120,Inspection,Moderate,Delay log associated with Ladle Crane Gearbox.
+DL-0101,EQ-005,2026-05-19T16:45,110,Inspection,Moderate,Delay log associated with Cooling Water Pump.
+DL-0102,EQ-012,2026-05-19T08:30,100,Process hold,Minor,Delay log associated with Cooling Tower Fan.
+DL-0103,EQ-011,2026-06-12T12:00,8,Process hold,Severe,Delay log associated with Lubrication Pump.
+DL-0104,EQ-006,2026-05-14T22:00,32,Inspection,Minor,Delay log associated with Conveyor Drive Unit.
+DL-0105,EQ-010,2026-06-03T20:45,28,Inspection,Severe,Delay log associated with Air Compressor.
+DL-0106,EQ-004,2026-05-02T02:30,124,Planned maintenance,Minor,Delay log associated with Ladle Crane Gearbox.
+DL-0107,EQ-005,2026-06-23T15:30,39,Process hold,Minor,Delay log associated with Cooling Water Pump.
+DL-0108,EQ-003,2026-06-03T04:15,86,Bearing Wear,Moderate,Delay log associated with Blast Furnace Blower.
+DL-0109,EQ-012,2026-05-16T05:30,49,Planned maintenance,Minor,Delay log associated with Cooling Tower Fan.
+DL-0110,EQ-001,2026-05-16T05:00,111,Planned maintenance,Moderate,Delay log associated with Caster Hydraulic Pump.
+DL-0111,EQ-009,2026-06-25T20:45,160,Planned maintenance,Severe,Delay log associated with Scale Breaker Motor.
+DL-0112,EQ-007,2026-05-05T06:30,70,Bearing Wear,Severe,Delay log associated with Dust Collector Fan.
+DL-0113,EQ-001,2026-05-10T14:45,78,Planned maintenance,Moderate,Delay log associated with Caster Hydraulic Pump.
+DL-0114,EQ-005,2026-05-07T17:45,116,Inspection,Moderate,Delay log associated with Cooling Water Pump.
+DL-0115,EQ-006,2026-05-01T06:45,34,Planned maintenance,Severe,Delay log associated with Conveyor Drive Unit.
+DL-0116,EQ-001,2026-06-20T02:30,23,Process hold,Minor,Delay log associated with Caster Hydraulic Pump.
+DL-0117,EQ-001,2026-06-19T07:45,47,Planned maintenance,Moderate,Delay log associated with Caster Hydraulic Pump.
+DL-0118,EQ-010,2026-05-24T07:30,62,Planned maintenance,Severe,Delay log associated with Air Compressor.
+DL-0119,EQ-010,2026-05-27T04:15,72,Cooling Flow Restriction,Minor,Delay log associated with Air Compressor.
+DL-0120,EQ-011,2026-06-14T06:00,105,Planned maintenance,Minor,Delay log associated with Lubrication Pump.
+DL-0121,EQ-006,2026-05-14T00:15,145,Planned maintenance,Severe,Delay log associated with Conveyor Drive Unit.
+DL-0122,EQ-004,2026-06-04T12:30,152,Process hold,Moderate,Delay log associated with Ladle Crane Gearbox.
+DL-0123,EQ-008,2026-06-01T14:00,130,Process hold,Minor,Delay log associated with Reheat Furnace Burner.
+DL-0124,EQ-002,2026-06-20T00:00,69,Process hold,Minor,Delay log associated with Rolling Mill Main Motor.
+DL-0125,EQ-010,2026-05-06T15:30,54,Process hold,Severe,Delay log associated with Air Compressor.
+DL-0126,EQ-004,2026-06-07T23:15,54,Planned maintenance,Severe,Delay log associated with Ladle Crane Gearbox.
+DL-0127,EQ-001,2026-06-29T13:30,94,Planned maintenance,Moderate,Delay log associated with Caster Hydraulic Pump.
+DL-0128,EQ-004,2026-06-21T14:45,18,Inspection,Moderate,Delay log associated with Ladle Crane Gearbox.
+DL-0129,EQ-012,2026-05-03T14:30,17,Process hold,Minor,Delay log associated with Cooling Tower Fan.
+DL-0130,EQ-005,2026-06-24T17:45,98,Planned maintenance,Moderate,Delay log associated with Cooling Water Pump.
+DL-0131,EQ-002,2026-05-24T15:45,96,Process hold,Moderate,Delay log associated with Rolling Mill Main Motor.
+DL-0132,EQ-008,2026-05-30T10:45,157,Inspection,Minor,Delay log associated with Reheat Furnace Burner.
+DL-0133,EQ-004,2026-05-13T06:45,92,Process hold,Moderate,Delay log associated with Ladle Crane Gearbox.
+DL-0134,EQ-012,2026-06-06T04:15,92,Inspection,Minor,Delay log associated with Cooling Tower Fan.
+DL-0135,EQ-009,2026-05-06T22:45,23,Inspection,Moderate,Delay log associated with Scale Breaker Motor.
+DL-0136,EQ-002,2026-05-03T12:00,10,Motor Overload,Moderate,Delay log associated with Rolling Mill Main Motor.
+DL-0137,EQ-003,2026-05-12T01:15,107,Inspection,Moderate,Delay log associated with Blast Furnace Blower.
+DL-0138,EQ-003,2026-06-07T22:15,94,Bearing Wear,Severe,Delay log associated with Blast Furnace Blower.
+DL-0139,EQ-012,2026-05-10T03:00,100,Planned maintenance,Moderate,Delay log associated with Cooling Tower Fan.
+DL-0140,EQ-011,2026-06-10T23:15,9,Planned maintenance,Minor,Delay log associated with Lubrication Pump.
+DL-0141,EQ-003,2026-06-10T08:15,32,Inspection,Minor,Delay log associated with Blast Furnace Blower.
+DL-0142,EQ-007,2026-06-02T11:00,33,Planned maintenance,Minor,Delay log associated with Dust Collector Fan.
+DL-0143,EQ-003,2026-05-31T00:30,16,Inspection,Severe,Delay log associated with Blast Furnace Blower.
+DL-0144,EQ-009,2026-05-15T21:15,56,Process hold,Severe,Delay log associated with Scale Breaker Motor.
+DL-0145,EQ-006,2026-06-23T02:15,35,Process hold,Severe,Delay log associated with Conveyor Drive Unit.
+DL-0146,EQ-012,2026-06-07T05:30,78,Planned maintenance,Severe,Delay log associated with Cooling Tower Fan.
+DL-0147,EQ-006,2026-05-04T15:15,90,Planned maintenance,Severe,Delay log associated with Conveyor Drive Unit.
+DL-0148,EQ-005,2026-06-18T23:30,20,Hydraulic Leakage,Severe,Delay log associated with Cooling Water Pump.
+DL-0149,EQ-011,2026-06-03T00:45,36,Bearing Wear,Moderate,Delay log associated with Lubrication Pump.
+DL-0150,EQ-011,2026-05-26T12:15,33,Inspection,Minor,Delay log associated with Lubrication Pump.
+DL-0151,EQ-006,2026-05-20T02:00,108,Planned maintenance,Minor,Delay log associated with Conveyor Drive Unit.
+DL-0152,EQ-002,2026-05-18T11:15,24,Process hold,Minor,Delay log associated with Rolling Mill Main Motor.
+DL-0153,EQ-010,2026-06-02T04:45,34,Inspection,Minor,Delay log associated with Air Compressor.
+DL-0154,EQ-003,2026-05-30T01:15,15,Process hold,Severe,Delay log associated with Blast Furnace Blower.
+DL-0155,EQ-006,2026-05-16T18:30,113,Inspection,Minor,Delay log associated with Conveyor Drive Unit.
+DL-0156,EQ-011,2026-06-11T06:15,143,Bearing Wear,Minor,Delay log associated with Lubrication Pump.
+DL-0157,EQ-010,2026-05-20T11:30,154,Process hold,Moderate,Delay log associated with Air Compressor.
+DL-0158,EQ-012,2026-05-07T09:00,27,Process hold,Minor,Delay log associated with Cooling Tower Fan.
+DL-0159,EQ-011,2026-05-01T19:30,8,Planned maintenance,Severe,Delay log associated with Lubrication Pump.
+DL-0160,EQ-006,2026-06-20T09:30,127,Process hold,Minor,Delay log associated with Conveyor Drive Unit.
+DL-0161,EQ-001,2026-06-21T14:15,14,Process hold,Minor,Delay log associated with Caster Hydraulic Pump.
+DL-0162,EQ-002,2026-05-17T07:15,144,Inspection,Minor,Delay log associated with Rolling Mill Main Motor.
+DL-0163,EQ-012,2026-06-24T00:45,28,Cooling Flow Restriction,Severe,Delay log associated with Cooling Tower Fan.
+DL-0164,EQ-010,2026-05-25T16:30,105,Inspection,Severe,Delay log associated with Air Compressor.
+DL-0165,EQ-009,2026-05-25T11:15,59,Planned maintenance,Severe,Delay log associated with Scale Breaker Motor.
+DL-0166,EQ-001,2026-06-17T20:15,135,Cooling Flow Restriction,Moderate,Delay log associated with Caster Hydraulic Pump.
+DL-0167,EQ-002,2026-06-09T19:15,127,Process hold,Severe,Delay log associated with Rolling Mill Main Motor.
+DL-0168,EQ-012,2026-05-30T20:45,40,Cooling Flow Restriction,Minor,Delay log associated with Cooling Tower Fan.
+DL-0169,EQ-006,2026-06-01T06:00,52,Planned maintenance,Moderate,Delay log associated with Conveyor Drive Unit.
+DL-0170,EQ-008,2026-06-09T19:00,136,Process hold,Minor,Delay log associated with Reheat Furnace Burner.
+DL-0171,EQ-003,2026-06-11T06:30,143,Planned maintenance,Moderate,Delay log associated with Blast Furnace Blower.
+DL-0172,EQ-002,2026-05-24T03:30,101,Motor Overload,Moderate,Delay log associated with Rolling Mill Main Motor.
+DL-0173,EQ-001,2026-06-15T16:45,102,Process hold,Moderate,Delay log associated with Caster Hydraulic Pump.
+DL-0174,EQ-003,2026-05-18T08:00,56,Gearbox Misalignment,Minor,Delay log associated with Blast Furnace Blower.
+DL-0175,EQ-012,2026-06-26T15:30,83,Inspection,Moderate,Delay log associated with Cooling Tower Fan.
+DL-0176,EQ-002,2026-06-26T03:30,58,Process hold,Severe,Delay log associated with Rolling Mill Main Motor.
+DL-0177,EQ-007,2026-06-18T10:15,15,Inspection,Minor,Delay log associated with Dust Collector Fan.
+DL-0178,EQ-007,2026-05-24T23:45,137,Bearing Wear,Minor,Delay log associated with Dust Collector Fan.
+DL-0179,EQ-009,2026-05-10T00:00,63,Inspection,Severe,Delay log associated with Scale Breaker Motor.
+DL-0180,EQ-002,2026-05-13T08:45,138,Inspection,Moderate,Delay log associated with Rolling Mill Main Motor.
+DL-0181,EQ-008,2026-05-31T20:00,97,Inspection,Minor,Delay log associated with Reheat Furnace Burner.
+DL-0182,EQ-003,2026-06-02T23:00,16,Process hold,Moderate,Delay log associated with Blast Furnace Blower.
+DL-0183,EQ-008,2026-05-12T12:00,53,Motor Overload,Minor,Delay log associated with Reheat Furnace Burner.
+DL-0184,EQ-004,2026-06-08T20:30,49,Process hold,Severe,Delay log associated with Ladle Crane Gearbox.
+DL-0185,EQ-006,2026-06-28T18:00,6,Planned maintenance,Severe,Delay log associated with Conveyor Drive Unit.
+DL-0186,EQ-005,2026-05-14T20:00,125,Inspection,Moderate,Delay log associated with Cooling Water Pump.
+DL-0187,EQ-003,2026-06-25T04:00,92,Inspection,Severe,Delay log associated with Blast Furnace Blower.
+DL-0188,EQ-006,2026-06-01T04:00,129,Process hold,Severe,Delay log associated with Conveyor Drive Unit.
+DL-0189,EQ-008,2026-06-11T23:00,120,Planned maintenance,Moderate,Delay log associated with Reheat Furnace Burner.
+DL-0190,EQ-008,2026-06-06T17:00,107,Process hold,Minor,Delay log associated with Reheat Furnace Burner.
+DL-0191,EQ-012,2026-06-01T06:15,74,Process hold,Moderate,Delay log associated with Cooling Tower Fan.
+DL-0192,EQ-004,2026-06-08T04:30,22,Planned maintenance,Minor,Delay log associated with Ladle Crane Gearbox.
+DL-0193,EQ-006,2026-05-29T04:30,56,Planned maintenance,Severe,Delay log associated with Conveyor Drive Unit.
+DL-0194,EQ-005,2026-05-27T14:00,23,Planned maintenance,Minor,Delay log associated with Cooling Water Pump.
+DL-0195,EQ-002,2026-06-22T05:00,116,Planned maintenance,Severe,Delay log associated with Rolling Mill Main Motor.
+DL-0196,EQ-008,2026-05-27T02:00,80,Inspection,Minor,Delay log associated with Reheat Furnace Burner.
+DL-0197,EQ-001,2026-05-17T18:45,105,Inspection,Moderate,Delay log associated with Caster Hydraulic Pump.
+DL-0198,EQ-001,2026-06-08T07:30,61,Lubrication Failure,Moderate,Delay log associated with Caster Hydraulic Pump.
+DL-0199,EQ-005,2026-05-08T16:15,83,Process hold,Minor,Delay log associated with Cooling Water Pump.
+DL-0200,EQ-001,2026-06-13T17:45,73,Process hold,Severe,Delay log associated with Caster Hydraulic Pump.
+DL-0201,EQ-011,2026-06-24T08:45,146,Bearing Wear,Severe,Delay log associated with Lubrication Pump.
+DL-0202,EQ-008,2026-05-28T16:15,39,Inspection,Minor,Delay log associated with Reheat Furnace Burner.
+DL-0203,EQ-007,2026-06-22T07:15,113,Process hold,Moderate,Delay log associated with Dust Collector Fan.
+DL-0204,EQ-002,2026-05-18T11:30,5,Process hold,Severe,Delay log associated with Rolling Mill Main Motor.
+DL-0205,EQ-004,2026-05-27T08:15,61,Planned maintenance,Moderate,Delay log associated with Ladle Crane Gearbox.
+DL-0206,EQ-006,2026-06-25T12:15,75,Planned maintenance,Severe,Delay log associated with Conveyor Drive Unit.
+DL-0207,EQ-010,2026-05-21T03:15,138,Cooling Flow Restriction,Minor,Delay log associated with Air Compressor.
+DL-0208,EQ-007,2026-05-15T05:30,114,Process hold,Minor,Delay log associated with Dust Collector Fan.
+DL-0209,EQ-005,2026-05-14T20:45,131,Planned maintenance,Moderate,Delay log associated with Cooling Water Pump.
+DL-0210,EQ-011,2026-05-20T19:15,146,Planned maintenance,Minor,Delay log associated with Lubrication Pump.
+DL-0211,EQ-008,2026-05-01T05:30,5,Inspection,Minor,Delay log associated with Reheat Furnace Burner.
+DL-0212,EQ-006,2026-06-27T10:15,91,Inspection,Minor,Delay log associated with Conveyor Drive Unit.
+DL-0213,EQ-006,2026-05-13T06:15,152,Planned maintenance,Severe,Delay log associated with Conveyor Drive Unit.
+DL-0214,EQ-011,2026-05-19T14:30,158,Inspection,Moderate,Delay log associated with Lubrication Pump.
+DL-0215,EQ-009,2026-05-29T18:15,49,Inspection,Moderate,Delay log associated with Scale Breaker Motor.
+DL-0216,EQ-005,2026-05-06T16:45,117,Planned maintenance,Severe,Delay log associated with Cooling Water Pump.
+DL-0217,EQ-006,2026-06-12T17:45,57,Process hold,Moderate,Delay log associated with Conveyor Drive Unit.
+DL-0218,EQ-005,2026-06-09T19:45,29,Planned maintenance,Minor,Delay log associated with Cooling Water Pump.
+DL-0219,EQ-010,2026-06-08T09:45,20,Inspection,Moderate,Delay log associated with Air Compressor.
+DL-0220,EQ-009,2026-05-21T09:45,103,Planned maintenance,Minor,Delay log associated with Scale Breaker Motor.
+DL-0221,EQ-012,2026-05-22T20:45,67,Process hold,Moderate,Delay log associated with Cooling Tower Fan.
+DL-0222,EQ-005,2026-06-27T12:00,134,Process hold,Moderate,Delay log associated with Cooling Water Pump.
+DL-0223,EQ-001,2026-06-21T09:00,34,Inspection,Severe,Delay log associated with Caster Hydraulic Pump.
+DL-0224,EQ-005,2026-05-07T04:15,38,Inspection,Minor,Delay log associated with Cooling Water Pump.
+DL-0225,EQ-001,2026-06-09T09:30,39,Inspection,Minor,Delay log associated with Caster Hydraulic Pump.
+DL-0226,EQ-002,2026-06-06T19:45,123,Process hold,Minor,Delay log associated with Rolling Mill Main Motor.
+DL-0227,EQ-012,2026-06-22T01:00,54,Inspection,Minor,Delay log associated with Cooling Tower Fan.
+DL-0228,EQ-009,2026-06-09T17:30,40,Process hold,Minor,Delay log associated with Scale Breaker Motor.
+DL-0229,EQ-008,2026-05-18T11:15,136,Planned maintenance,Moderate,Delay log associated with Reheat Furnace Burner.
+DL-0230,EQ-006,2026-06-13T16:30,5,Planned maintenance,Moderate,Delay log associated with Conveyor Drive Unit.
+DL-0231,EQ-009,2026-06-25T17:00,82,Inspection,Moderate,Delay log associated with Scale Breaker Motor.
+DL-0232,EQ-007,2026-05-09T06:45,46,Planned maintenance,Severe,Delay log associated with Dust Collector Fan.
+DL-0233,EQ-003,2026-06-23T17:45,109,Gearbox Misalignment,Moderate,Delay log associated with Blast Furnace Blower.
+DL-0234,EQ-007,2026-05-22T09:00,145,Bearing Wear,Moderate,Delay log associated with Dust Collector Fan.
+DL-0235,EQ-009,2026-05-07T05:30,110,Process hold,Moderate,Delay log associated with Scale Breaker Motor.
+DL-0236,EQ-002,2026-06-15T10:15,122,Cooling Flow Restriction,Moderate,Delay log associated with Rolling Mill Main Motor.
+DL-0237,EQ-004,2026-06-18T13:15,149,Inspection,Moderate,Delay log associated with Ladle Crane Gearbox.
+DL-0238,EQ-012,2026-05-15T12:00,38,Planned maintenance,Minor,Delay log associated with Cooling Tower Fan.
+DL-0239,EQ-008,2026-05-16T11:45,139,Process hold,Severe,Delay log associated with Reheat Furnace Burner.
+DL-0240,EQ-009,2026-05-28T18:15,119,Bearing Wear,Minor,Delay log associated with Scale Breaker Motor.
+DL-0241,EQ-008,2026-06-29T04:00,67,Process hold,Minor,Delay log associated with Reheat Furnace Burner.
+DL-0242,EQ-003,2026-05-24T16:30,47,Inspection,Minor,Delay log associated with Blast Furnace Blower.
+DL-0243,EQ-008,2026-05-28T06:00,17,Inspection,Moderate,Delay log associated with Reheat Furnace Burner.
+DL-0244,EQ-006,2026-06-17T20:15,109,Planned maintenance,Moderate,Delay log associated with Conveyor Drive Unit.
+DL-0245,EQ-004,2026-05-27T12:00,82,Bearing Wear,Minor,Delay log associated with Ladle Crane Gearbox.
+DL-0246,EQ-004,2026-05-17T22:45,96,Process hold,Minor,Delay log associated with Ladle Crane Gearbox.
+DL-0247,EQ-010,2026-05-04T22:45,117,Inspection,Minor,Delay log associated with Air Compressor.
+DL-0248,EQ-006,2026-06-04T07:45,75,Bearing Wear,Minor,Delay log associated with Conveyor Drive Unit.
+DL-0249,EQ-002,2026-05-21T07:00,157,Cooling Flow Restriction,Moderate,Delay log associated with Rolling Mill Main Motor.
+DL-0250,EQ-005,2026-06-05T13:30,63,Process hold,Moderate,Delay log associated with Cooling Water Pump.
+DL-0251,EQ-003,2026-05-18T01:30,154,Inspection,Moderate,Delay log associated with Blast Furnace Blower.
+DL-0252,EQ-012,2026-05-22T23:00,137,Planned maintenance,Minor,Delay log associated with Cooling Tower Fan.
+DL-0253,EQ-002,2026-06-27T21:30,95,Process hold,Moderate,Delay log associated with Rolling Mill Main Motor.
+DL-0254,EQ-002,2026-05-03T07:45,143,Process hold,Severe,Delay log associated with Rolling Mill Main Motor.
+DL-0255,EQ-009,2026-05-30T07:00,120,Planned maintenance,Severe,Delay log associated with Scale Breaker Motor.
+DL-0256,EQ-002,2026-05-10T10:15,103,Cooling Flow Restriction,Minor,Delay log associated with Rolling Mill Main Motor.
+DL-0257,EQ-003,2026-05-05T16:30,11,Process hold,Severe,Delay log associated with Blast Furnace Blower.
+DL-0258,EQ-007,2026-06-25T11:30,150,Bearing Wear,Severe,Delay log associated with Dust Collector Fan.
+DL-0259,EQ-004,2026-06-09T07:00,128,Process hold,Minor,Delay log associated with Ladle Crane Gearbox.
+DL-0260,EQ-004,2026-06-08T08:00,106,Lubrication Failure,Severe,Delay log associated with Ladle Crane Gearbox.
+DL-0261,EQ-010,2026-06-23T13:30,132,Inspection,Moderate,Delay log associated with Air Compressor.
+DL-0262,EQ-006,2026-06-06T02:30,145,Inspection,Minor,Delay log associated with Conveyor Drive Unit.
+DL-0263,EQ-005,2026-05-07T00:15,110,Inspection,Minor,Delay log associated with Cooling Water Pump.
+DL-0264,EQ-008,2026-05-22T09:30,120,Process hold,Minor,Delay log associated with Reheat Furnace Burner.
+DL-0265,EQ-009,2026-06-16T14:15,8,Planned maintenance,Severe,Delay log associated with Scale Breaker Motor.
+DL-0266,EQ-011,2026-05-04T07:15,36,Inspection,Severe,Delay log associated with Lubrication Pump.
+DL-0267,EQ-008,2026-05-27T03:45,156,Motor Overload,Moderate,Delay log associated with Reheat Furnace Burner.
+DL-0268,EQ-003,2026-05-23T07:15,88,Inspection,Moderate,Delay log associated with Blast Furnace Blower.
+DL-0269,EQ-012,2026-05-10T17:00,117,Process hold,Minor,Delay log associated with Cooling Tower Fan.
+DL-0270,EQ-007,2026-06-12T12:30,142,Planned maintenance,Moderate,Delay log associated with Dust Collector Fan.
+DL-0271,EQ-003,2026-05-15T19:00,130,Planned maintenance,Moderate,Delay log associated with Blast Furnace Blower.
+DL-0272,EQ-007,2026-05-01T19:45,14,Planned maintenance,Minor,Delay log associated with Dust Collector Fan.
+DL-0273,EQ-008,2026-05-20T08:30,44,Inspection,Severe,Delay log associated with Reheat Furnace Burner.
+DL-0274,EQ-002,2026-06-28T04:45,125,Motor Overload,Severe,Delay log associated with Rolling Mill Main Motor.
+DL-0275,EQ-012,2026-06-12T18:00,87,Process hold,Minor,Delay log associated with Cooling Tower Fan.
+DL-0276,EQ-001,2026-06-23T17:15,59,Inspection,Severe,Delay log associated with Caster Hydraulic Pump.
+DL-0277,EQ-011,2026-05-20T05:30,76,Bearing Wear,Moderate,Delay log associated with Lubrication Pump.
+DL-0278,EQ-005,2026-05-27T23:00,92,Hydraulic Leakage,Moderate,Delay log associated with Cooling Water Pump.
+DL-0279,EQ-001,2026-06-29T18:00,112,Process hold,Moderate,Delay log associated with Caster Hydraulic Pump.
+DL-0280,EQ-009,2026-05-23T12:45,108,Process hold,Moderate,Delay log associated with Scale Breaker Motor.
+DL-0281,EQ-010,2026-05-12T15:00,30,Inspection,Moderate,Delay log associated with Air Compressor.
+DL-0282,EQ-010,2026-05-13T01:30,88,Planned maintenance,Severe,Delay log associated with Air Compressor.
+DL-0283,EQ-012,2026-06-17T03:45,151,Inspection,Severe,Delay log associated with Cooling Tower Fan.
+DL-0284,EQ-006,2026-06-20T15:15,110,Inspection,Moderate,Delay log associated with Conveyor Drive Unit.
+DL-0285,EQ-004,2026-05-17T04:00,139,Bearing Wear,Moderate,Delay log associated with Ladle Crane Gearbox.
+DL-0286,EQ-011,2026-05-10T00:15,9,Planned maintenance,Minor,Delay log associated with Lubrication Pump.
+DL-0287,EQ-006,2026-05-03T20:15,18,Planned maintenance,Moderate,Delay log associated with Conveyor Drive Unit.
+DL-0288,EQ-009,2026-06-30T00:45,86,Planned maintenance,Minor,Delay log associated with Scale Breaker Motor.
+DL-0289,EQ-009,2026-06-13T16:15,6,Process hold,Moderate,Delay log associated with Scale Breaker Motor.
+DL-0290,EQ-003,2026-06-12T08:15,27,Gearbox Misalignment,Minor,Delay log associated with Blast Furnace Blower.
+DL-0291,EQ-008,2026-05-23T05:30,72,Planned maintenance,Moderate,Delay log associated with Reheat Furnace Burner.
+DL-0292,EQ-011,2026-05-28T18:30,112,Process hold,Minor,Delay log associated with Lubrication Pump.
+DL-0293,EQ-007,2026-05-25T05:30,36,Planned maintenance,Severe,Delay log associated with Dust Collector Fan.
+DL-0294,EQ-011,2026-06-27T07:00,52,Process hold,Minor,Delay log associated with Lubrication Pump.
+DL-0295,EQ-005,2026-05-05T04:15,85,Lubrication Failure,Minor,Delay log associated with Cooling Water Pump.
+DL-0296,EQ-012,2026-06-17T07:30,157,Planned maintenance,Severe,Delay log associated with Cooling Tower Fan.
+DL-0297,EQ-001,2026-06-25T21:30,15,Planned maintenance,Minor,Delay log associated with Caster Hydraulic Pump.
+DL-0298,EQ-002,2026-05-25T22:15,12,Motor Overload,Moderate,Delay log associated with Rolling Mill Main Motor.
+DL-0299,EQ-006,2026-05-05T09:15,120,Inspection,Minor,Delay log associated with Conveyor Drive Unit.
+DL-0300,EQ-004,2026-05-23T14:45,117,Planned maintenance,Severe,Delay log associated with Ladle Crane Gearbox.

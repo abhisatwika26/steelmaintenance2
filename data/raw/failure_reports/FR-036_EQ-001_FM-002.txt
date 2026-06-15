@@ -1,0 +1,23 @@
+Failure Report: FR-036
+Equipment ID: EQ-001
+Equipment Name: Caster Hydraulic Pump
+Plant Area: Continuous Casting
+Failure Mode: Hydraulic Leakage
+Fault Code: FM-002
+Event Time: 2026-05-23T05:30
+Severity: High
+
+Observed Symptoms:
+The maintenance team observed pressure drop with increasing pump temperature. Sensor history around the event showed abnormal behavior compared with the normal operating band for this asset.
+
+Root Cause:
+seal wear or suction-side leakage reducing hydraulic pressure.
+
+Corrective Action:
+isolate pump, inspect suction strainer and seal kit, restore pressure before restart. The required spare references were SP-SEAL-001, SP-FILTER-001.
+
+Downtime:
+Total equipment delay was 158 minutes.
+
+Lessons Learned:
+Future alerts should combine anomaly score, equipment criticality, recent maintenance history, and spare availability before assigning intervention priority.

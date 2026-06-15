@@ -1,0 +1,16 @@
+Equipment Manual: Conveyor Drive Unit
+
+Equipment ID: EQ-006
+Plant Area: Raw Material Handling
+Equipment Type: Drive Unit
+Criticality: Medium
+
+Normal Operating Bands:
+Temperature: 53.0 C to 71.0 C
+Vibration: 0.5 mm/s to 4.6 mm/s
+Pressure: 0.0 bar to 25.0 bar
+Current: 33.0 A to 55.0 A
+Coolant Flow: 28.0 lpm to 68.0 lpm
+
+Maintenance Notes:
+This asset should be monitored for temperature rise, vibration increase, abnormal current draw, and process delay impact. Critical assets require immediate review when anomaly score is high.

@@ -1,0 +1,16 @@
+Equipment Manual: Rolling Mill Main Motor
+
+Equipment ID: EQ-002
+Plant Area: Hot Rolling Mill
+Equipment Type: Electric Motor
+Criticality: Critical
+
+Normal Operating Bands:
+Temperature: 66.0 C to 84.0 C
+Vibration: 0.5 mm/s to 4.3 mm/s
+Pressure: 0.0 bar to 25.0 bar
+Current: 195.0 A to 325.0 A
+Coolant Flow: 45.0 lpm to 85.0 lpm
+
+Maintenance Notes:
+This asset should be monitored for temperature rise, vibration increase, abnormal current draw, and process delay impact. Critical assets require immediate review when anomaly score is high.

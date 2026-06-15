@@ -1,0 +1,49 @@
+feedback_id,recommendation_id,equipment_id,submitted_by,rating,actual_outcome,correction_notes
+FB-0001,REC-0001,EQ-012,maintenance_engineer,corrected,monitoring_required,Root cause required additional inspection before final confirmation.
+FB-0002,REC-0002,EQ-012,maintenance_engineer,accepted,repeat_inspection_needed,Root cause required additional inspection before final confirmation.
+FB-0003,REC-0003,EQ-001,reliability_engineer,corrected,monitoring_required,
+FB-0004,REC-0004,EQ-004,maintenance_engineer,corrected,issue_resolved,
+FB-0005,REC-0005,EQ-004,maintenance_engineer,accepted,repeat_inspection_needed,
+FB-0006,REC-0006,EQ-010,shift_supervisor,corrected,repeat_inspection_needed,
+FB-0007,REC-0007,EQ-007,maintenance_engineer,accepted,monitoring_required,
+FB-0008,REC-0008,EQ-012,shift_supervisor,accepted,repeat_inspection_needed,Root cause required additional inspection before final confirmation.
+FB-0009,REC-0009,EQ-003,maintenance_engineer,accepted,monitoring_required,
+FB-0010,REC-0010,EQ-003,shift_supervisor,partially_accepted,monitoring_required,
+FB-0011,REC-0011,EQ-006,maintenance_engineer,accepted,issue_resolved,
+FB-0012,REC-0012,EQ-009,reliability_engineer,partially_accepted,repeat_inspection_needed,Root cause required additional inspection before final confirmation.
+FB-0013,REC-0013,EQ-005,maintenance_engineer,corrected,repeat_inspection_needed,
+FB-0014,REC-0014,EQ-009,maintenance_engineer,accepted,monitoring_required,Root cause required additional inspection before final confirmation.
+FB-0015,REC-0015,EQ-005,shift_supervisor,accepted,monitoring_required,
+FB-0016,REC-0016,EQ-003,reliability_engineer,corrected,issue_resolved,
+FB-0017,REC-0017,EQ-006,reliability_engineer,corrected,monitoring_required,
+FB-0018,REC-0018,EQ-010,maintenance_engineer,accepted,issue_resolved,
+FB-0019,REC-0019,EQ-012,maintenance_engineer,corrected,repeat_inspection_needed,
+FB-0020,REC-0020,EQ-001,reliability_engineer,partially_accepted,repeat_inspection_needed,Root cause required additional inspection before final confirmation.
+FB-0021,REC-0021,EQ-009,reliability_engineer,accepted,repeat_inspection_needed,
+FB-0022,REC-0022,EQ-005,reliability_engineer,partially_accepted,repeat_inspection_needed,
+FB-0023,REC-0023,EQ-011,maintenance_engineer,corrected,repeat_inspection_needed,
+FB-0024,REC-0024,EQ-008,maintenance_engineer,accepted,repeat_inspection_needed,Root cause required additional inspection before final confirmation.
+FB-0025,REC-0025,EQ-011,reliability_engineer,partially_accepted,monitoring_required,
+FB-0026,REC-0026,EQ-007,shift_supervisor,accepted,issue_resolved,
+FB-0027,REC-0027,EQ-004,maintenance_engineer,accepted,repeat_inspection_needed,
+FB-0028,REC-0028,EQ-008,maintenance_engineer,accepted,repeat_inspection_needed,
+FB-0029,REC-0029,EQ-010,reliability_engineer,corrected,issue_resolved,Root cause required additional inspection before final confirmation.
+FB-0030,REC-0030,EQ-002,reliability_engineer,accepted,issue_resolved,
+FB-0031,REC-0031,EQ-007,maintenance_engineer,partially_accepted,repeat_inspection_needed,Root cause required additional inspection before final confirmation.
+FB-0032,REC-0032,EQ-011,maintenance_engineer,accepted,monitoring_required,
+FB-0033,REC-0033,EQ-010,shift_supervisor,accepted,monitoring_required,
+FB-0034,REC-0034,EQ-007,reliability_engineer,corrected,repeat_inspection_needed,
+FB-0035,REC-0035,EQ-002,reliability_engineer,corrected,monitoring_required,
+FB-0036,REC-0036,EQ-001,reliability_engineer,accepted,repeat_inspection_needed,
+FB-0037,REC-0037,EQ-009,maintenance_engineer,accepted,repeat_inspection_needed,
+FB-0038,REC-0038,EQ-006,reliability_engineer,partially_accepted,issue_resolved,
+FB-0039,REC-0039,EQ-002,shift_supervisor,accepted,monitoring_required,
+FB-0040,REC-0040,EQ-008,maintenance_engineer,partially_accepted,repeat_inspection_needed,
+FB-0041,REC-0041,EQ-001,reliability_engineer,partially_accepted,monitoring_required,
+FB-0042,REC-0042,EQ-002,maintenance_engineer,accepted,monitoring_required,
+FB-0043,REC-0043,EQ-011,reliability_engineer,partially_accepted,repeat_inspection_needed,Root cause required additional inspection before final confirmation.
+FB-0044,REC-0044,EQ-008,reliability_engineer,partially_accepted,monitoring_required,Root cause required additional inspection before final confirmation.
+FB-0045,REC-0045,EQ-003,maintenance_engineer,partially_accepted,issue_resolved,Root cause required additional inspection before final confirmation.
+FB-0046,REC-0046,EQ-006,reliability_engineer,accepted,issue_resolved,
+FB-0047,REC-0047,EQ-005,shift_supervisor,corrected,monitoring_required,
+FB-0048,REC-0048,EQ-004,shift_supervisor,partially_accepted,repeat_inspection_needed,

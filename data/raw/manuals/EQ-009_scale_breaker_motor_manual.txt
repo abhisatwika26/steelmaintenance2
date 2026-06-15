@@ -1,0 +1,16 @@
+Equipment Manual: Scale Breaker Motor
+
+Equipment ID: EQ-009
+Plant Area: Hot Rolling Mill
+Equipment Type: Electric Motor
+Criticality: High
+
+Normal Operating Bands:
+Temperature: 61.0 C to 79.0 C
+Vibration: 0.5 mm/s to 4.5 mm/s
+Pressure: 0.0 bar to 25.0 bar
+Current: 99.0 A to 165.0 A
+Coolant Flow: 38.0 lpm to 78.0 lpm
+
+Maintenance Notes:
+This asset should be monitored for temperature rise, vibration increase, abnormal current draw, and process delay impact. Critical assets require immediate review when anomaly score is high.

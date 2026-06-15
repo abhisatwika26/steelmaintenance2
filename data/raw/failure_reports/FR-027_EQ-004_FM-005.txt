@@ -1,0 +1,23 @@
+Failure Report: FR-027
+Equipment ID: EQ-004
+Equipment Name: Ladle Crane Gearbox
+Plant Area: Steel Melting Shop
+Failure Mode: Gearbox Misalignment
+Fault Code: FM-005
+Event Time: 2026-05-17T13:30
+Severity: High
+
+Observed Symptoms:
+The maintenance team observed high vibration during load changes. Sensor history around the event showed abnormal behavior compared with the normal operating band for this asset.
+
+Root Cause:
+coupling misalignment transferring shock load into gearbox bearings.
+
+Corrective Action:
+check alignment, inspect coupling, tighten foundation bolts, monitor vibration trend. The required spare references were SP-COUPLING-001, SP-BOLT-001.
+
+Downtime:
+Total equipment delay was 146 minutes.
+
+Lessons Learned:
+Future alerts should combine anomaly score, equipment criticality, recent maintenance history, and spare availability before assigning intervention priority.

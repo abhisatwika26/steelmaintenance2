@@ -1,0 +1,16 @@
+Equipment Manual: Ladle Crane Gearbox
+
+Equipment ID: EQ-004
+Plant Area: Steel Melting Shop
+Equipment Type: Gearbox
+Criticality: High
+
+Normal Operating Bands:
+Temperature: 63.0 C to 81.0 C
+Vibration: 0.5 mm/s to 6.0 mm/s
+Pressure: 0.0 bar to 25.0 bar
+Current: 66.0 A to 110.0 A
+Coolant Flow: 30.0 lpm to 70.0 lpm
+
+Maintenance Notes:
+This asset should be monitored for temperature rise, vibration increase, abnormal current draw, and process delay impact. Critical assets require immediate review when anomaly score is high.

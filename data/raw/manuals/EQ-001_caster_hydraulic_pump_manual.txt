@@ -1,0 +1,16 @@
+Equipment Manual: Caster Hydraulic Pump
+
+Equipment ID: EQ-001
+Plant Area: Continuous Casting
+Equipment Type: Hydraulic Pump
+Criticality: Critical
+
+Normal Operating Bands:
+Temperature: 60.0 C to 78.0 C
+Vibration: 0.5 mm/s to 4.7 mm/s
+Pressure: 120.0 bar to 170.0 bar
+Current: 31.5 A to 52.5 A
+Coolant Flow: 58.0 lpm to 98.0 lpm
+
+Maintenance Notes:
+This asset should be monitored for temperature rise, vibration increase, abnormal current draw, and process delay impact. Critical assets require immediate review when anomaly score is high.

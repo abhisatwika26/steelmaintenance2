@@ -1,0 +1,13 @@
+equipment_id,equipment_name,plant_area,equipment_type,criticality,normal_temperature_c,normal_vibration_mm_s,normal_pressure_bar,normal_rpm,normal_current_amp,normal_coolant_flow_lpm
+EQ-001,Caster Hydraulic Pump,Continuous Casting,Hydraulic Pump,Critical,68,3.2,145,1480,42,78
+EQ-002,Rolling Mill Main Motor,Hot Rolling Mill,Electric Motor,Critical,74,2.8,0,960,260,65
+EQ-003,Blast Furnace Blower,Blast Furnace,Blower,Critical,82,4.0,210,1780,310,72
+EQ-004,Ladle Crane Gearbox,Steel Melting Shop,Gearbox,High,71,4.5,0,420,88,50
+EQ-005,Cooling Water Pump,Utilities,Centrifugal Pump,High,58,2.4,120,1450,58,92
+EQ-006,Conveyor Drive Unit,Raw Material Handling,Drive Unit,Medium,61,3.1,0,720,44,48
+EQ-007,Dust Collector Fan,Environmental Control,Fan,Medium,64,3.6,95,1320,39,45
+EQ-008,Reheat Furnace Burner,Reheat Furnace,Burner,High,88,2.2,32,0,28,40
+EQ-009,Scale Breaker Motor,Hot Rolling Mill,Electric Motor,High,69,3.0,0,1180,132,58
+EQ-010,Air Compressor,Utilities,Compressor,High,76,3.8,185,1520,96,70
+EQ-011,Lubrication Pump,Hot Rolling Mill,Lubrication Pump,Critical,62,2.5,75,1420,35,55
+EQ-012,Cooling Tower Fan,Utilities,Fan,Medium,57,3.4,0,880,52,96

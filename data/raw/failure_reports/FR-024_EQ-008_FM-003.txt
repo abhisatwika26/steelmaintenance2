@@ -1,0 +1,23 @@
+Failure Report: FR-024
+Equipment ID: EQ-008
+Equipment Name: Reheat Furnace Burner
+Plant Area: Reheat Furnace
+Failure Mode: Motor Overload
+Fault Code: FM-003
+Event Time: 2026-05-16T04:00
+Severity: Critical
+
+Observed Symptoms:
+The maintenance team observed current spike and repeated overload trip. Sensor history around the event showed abnormal behavior compared with the normal operating band for this asset.
+
+Root Cause:
+mechanical load increase or phase imbalance causing motor overload.
+
+Corrective Action:
+check load coupling, verify phase current balance, inspect motor winding temperature. The required spare references were SP-CONTACTOR-001, SP-FUSE-001.
+
+Downtime:
+Total equipment delay was 269 minutes.
+
+Lessons Learned:
+Future alerts should combine anomaly score, equipment criticality, recent maintenance history, and spare availability before assigning intervention priority.

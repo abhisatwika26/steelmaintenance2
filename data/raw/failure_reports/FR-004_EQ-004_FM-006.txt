@@ -1,0 +1,23 @@
+Failure Report: FR-004
+Equipment ID: EQ-004
+Equipment Name: Ladle Crane Gearbox
+Plant Area: Steel Melting Shop
+Failure Mode: Lubrication Failure
+Fault Code: FM-006
+Event Time: 2026-05-05T03:15
+Severity: High
+
+Observed Symptoms:
+The maintenance team observed oil level drop with heat buildup. Sensor history around the event showed abnormal behavior compared with the normal operating band for this asset.
+
+Root Cause:
+low oil level or blocked lubrication line reducing film strength.
+
+Corrective Action:
+top up oil, inspect lubrication line, replace clogged filter, verify pump discharge. The required spare references were SP-OIL-001, SP-FILTER-003.
+
+Downtime:
+Total equipment delay was 169 minutes.
+
+Lessons Learned:
+Future alerts should combine anomaly score, equipment criticality, recent maintenance history, and spare availability before assigning intervention priority.

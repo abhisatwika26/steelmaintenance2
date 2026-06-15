@@ -1,0 +1,23 @@
+Failure Report: FR-035
+Equipment ID: EQ-002
+Equipment Name: Rolling Mill Main Motor
+Plant Area: Hot Rolling Mill
+Failure Mode: Motor Overload
+Fault Code: FM-003
+Event Time: 2026-05-21T10:45
+Severity: Medium
+
+Observed Symptoms:
+The maintenance team observed current spike and repeated overload trip. Sensor history around the event showed abnormal behavior compared with the normal operating band for this asset.
+
+Root Cause:
+mechanical load increase or phase imbalance causing motor overload.
+
+Corrective Action:
+check load coupling, verify phase current balance, inspect motor winding temperature. The required spare references were SP-CONTACTOR-001, SP-FUSE-001.
+
+Downtime:
+Total equipment delay was 60 minutes.
+
+Lessons Learned:
+Future alerts should combine anomaly score, equipment criticality, recent maintenance history, and spare availability before assigning intervention priority.

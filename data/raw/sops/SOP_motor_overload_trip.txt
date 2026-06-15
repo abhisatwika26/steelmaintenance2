@@ -1,0 +1,24 @@
+Motor Overload Trip Response
+
+Purpose:
+Provide a standard maintenance response for current spike and repeated overload trip.
+
+Safety Precautions:
+1. Inform the shift supervisor before intervention.
+2. Follow lockout and tagout procedure for rotating or energized equipment.
+3. Verify zero stored energy before opening guards, panels, or hydraulic lines.
+
+Inspection Steps:
+1. Review recent alarm history and sensor trends.
+2. Compare temperature, vibration, pressure, current, and coolant flow against normal operating bands.
+3. Check recent maintenance logs for repeated symptoms.
+4. Inspect related components for leakage, wear, blockage, looseness, or overheating.
+
+Recommended Action:
+check load coupling, verify phase current balance, inspect motor winding temperature.
+
+Required Spares:
+SP-CONTACTOR-001, SP-FUSE-001.
+
+Escalation Rule:
+Escalate to the reliability engineer if the equipment is critical, if anomaly score remains high after corrective action, or if required spares are below minimum stock.

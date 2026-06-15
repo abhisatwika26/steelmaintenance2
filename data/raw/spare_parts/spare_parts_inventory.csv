@@ -1,0 +1,151 @@
+part_id,part_name,compatible_equipment_types,stock_quantity,minimum_required_stock,procurement_lead_days,supplier,criticality,unit_cost_inr
+SP-BEAR-001,Heavy Duty Bearing Set,Blower; Burner; Centrifugal Pump; Compressor; Drive Unit; Electric Motor; Fan; Gearbox; Hydraulic Pump; Lubrication Pump,16,6,9,Tata Industrial Supplies,Critical,137282
+SP-GREASE-001,High Temperature Grease Cartridge,Blower; Burner; Centrifugal Pump; Compressor; Drive Unit; Electric Motor; Fan; Gearbox; Hydraulic Pump; Lubrication Pump,80,24,2,JSW Vendor Hub,Medium,75501
+SP-SEAL-001,Hydraulic Pump Seal Kit,Blower; Burner; Centrifugal Pump; Compressor; Drive Unit; Electric Motor; Fan; Gearbox; Hydraulic Pump; Lubrication Pump,4,8,14,Siemens Service,Critical,58660
+SP-FILTER-001,Hydraulic Suction Filter,Blower; Burner; Centrifugal Pump; Compressor; Drive Unit; Electric Motor; Fan; Gearbox; Hydraulic Pump; Lubrication Pump,18,10,5,Local MRO Store,High,37184
+SP-CONTACTOR-001,Motor Power Contactor,Blower; Burner; Centrifugal Pump; Compressor; Drive Unit; Electric Motor; Fan; Gearbox; Hydraulic Pump; Lubrication Pump,7,5,8,Local MRO Store,High,153550
+SP-FUSE-001,High Current Fuse Set,Blower; Burner; Centrifugal Pump; Compressor; Drive Unit; Electric Motor; Fan; Gearbox; Hydraulic Pump; Lubrication Pump,35,12,3,Siemens Service,Medium,66200
+SP-FILTER-002,Cooling Water Strainer Element,Blower; Burner; Centrifugal Pump; Compressor; Drive Unit; Electric Motor; Fan; Gearbox; Hydraulic Pump; Lubrication Pump,11,10,6,Siemens Service,High,109208
+SP-GASKET-001,Cooling Line Gasket Kit,Blower; Burner; Centrifugal Pump; Compressor; Drive Unit; Electric Motor; Fan; Gearbox; Hydraulic Pump; Lubrication Pump,42,16,4,JSW Vendor Hub,Medium,27226
+SP-COUPLING-001,Flexible Coupling Assembly,Blower; Burner; Centrifugal Pump; Compressor; Drive Unit; Electric Motor; Fan; Gearbox; Hydraulic Pump; Lubrication Pump,3,5,18,Tata Industrial Supplies,Critical,175248
+SP-BOLT-001,Foundation Bolt Kit,Blower; Burner; Centrifugal Pump; Compressor; Drive Unit; Electric Motor; Fan; Gearbox; Hydraulic Pump; Lubrication Pump,60,20,4,Siemens Service,Medium,95376
+SP-OIL-001,ISO VG 220 Gear Oil Drum,Blower; Burner; Centrifugal Pump; Compressor; Drive Unit; Electric Motor; Fan; Gearbox; Hydraulic Pump; Lubrication Pump,14,8,7,Siemens Service,High,110267
+SP-FILTER-003,Lubrication Line Filter,Blower; Burner; Centrifugal Pump; Compressor; Drive Unit; Electric Motor; Fan; Gearbox; Hydraulic Pump; Lubrication Pump,9,8,6,Siemens Service,High,16700
+SP-GEN-013,Lubrication Pump Service Spare 013,Lubrication Pump,6,2,15,OEM Service Center,Low,33591
+SP-GEN-014,Gearbox Service Spare 014,Gearbox,12,10,17,JSW Vendor Hub,Medium,25050
+SP-GEN-015,Centrifugal Pump Service Spare 015,Centrifugal Pump,29,5,30,Tata Industrial Supplies,Medium,73132
+SP-GEN-016,Electric Motor Service Spare 016,Electric Motor,3,12,20,Tata Industrial Supplies,Low,31982
+SP-GEN-017,Blower Service Spare 017,Blower,26,9,18,JSW Vendor Hub,Medium,8685
+SP-GEN-018,Blower Service Spare 018,Blower,24,2,15,OEM Service Center,Medium,38388
+SP-GEN-019,Fan Service Spare 019,Fan,35,12,25,Local MRO Store,Low,25890
+SP-GEN-020,Centrifugal Pump Service Spare 020,Centrifugal Pump,13,2,21,Tata Industrial Supplies,High,42104
+SP-GEN-021,Hydraulic Pump Service Spare 021,Hydraulic Pump,3,11,18,JSW Vendor Hub,Low,67562
+SP-GEN-022,Electric Motor Service Spare 022,Electric Motor,11,3,22,Tata Industrial Supplies,High,31828
+SP-GEN-023,Fan Service Spare 023,Fan,7,11,10,Tata Industrial Supplies,High,11745
+SP-GEN-024,Fan Service Spare 024,Fan,37,11,19,OEM Service Center,Medium,27772
+SP-GEN-025,Lubrication Pump Service Spare 025,Lubrication Pump,20,5,11,Local MRO Store,Low,89039
+SP-GEN-026,Lubrication Pump Service Spare 026,Lubrication Pump,19,9,13,Tata Industrial Supplies,Low,61068
+SP-GEN-027,Compressor Service Spare 027,Compressor,36,3,5,JSW Vendor Hub,High,35760
+SP-GEN-028,Blower Service Spare 028,Blower,22,3,10,OEM Service Center,Medium,21676
+SP-GEN-029,Burner Service Spare 029,Burner,34,6,22,Tata Industrial Supplies,High,73692
+SP-GEN-030,Centrifugal Pump Service Spare 030,Centrifugal Pump,6,4,11,Tata Industrial Supplies,Low,73512
+SP-GEN-031,Blower Service Spare 031,Blower,17,6,22,JSW Vendor Hub,High,45942
+SP-GEN-032,Gearbox Service Spare 032,Gearbox,40,6,19,Local MRO Store,Medium,7658
+SP-GEN-033,Electric Motor Service Spare 033,Electric Motor,40,8,29,OEM Service Center,Low,1464
+SP-GEN-034,Drive Unit Service Spare 034,Drive Unit,8,12,11,JSW Vendor Hub,High,58912
+SP-GEN-035,Electric Motor Service Spare 035,Electric Motor,27,10,3,Tata Industrial Supplies,Low,91573
+SP-GEN-036,Blower Service Spare 036,Blower,34,2,29,OEM Service Center,High,73420
+SP-GEN-037,Blower Service Spare 037,Blower,27,4,4,OEM Service Center,Medium,6229
+SP-GEN-038,Drive Unit Service Spare 038,Drive Unit,13,12,10,Tata Industrial Supplies,Medium,74385
+SP-GEN-039,Fan Service Spare 039,Fan,39,4,10,JSW Vendor Hub,Low,55040
+SP-GEN-040,Hydraulic Pump Service Spare 040,Hydraulic Pump,11,7,28,Local MRO Store,High,33527
+SP-GEN-041,Centrifugal Pump Service Spare 041,Centrifugal Pump,10,3,15,Tata Industrial Supplies,Medium,30154
+SP-GEN-042,Gearbox Service Spare 042,Gearbox,29,7,12,JSW Vendor Hub,Low,4101
+SP-GEN-043,Lubrication Pump Service Spare 043,Lubrication Pump,12,8,13,OEM Service Center,Low,37585
+SP-GEN-044,Drive Unit Service Spare 044,Drive Unit,32,8,24,OEM Service Center,Low,16118
+SP-GEN-045,Centrifugal Pump Service Spare 045,Centrifugal Pump,11,11,11,Tata Industrial Supplies,Low,79193
+SP-GEN-046,Fan Service Spare 046,Fan,22,7,16,Tata Industrial Supplies,Medium,76574
+SP-GEN-047,Gearbox Service Spare 047,Gearbox,16,2,25,Local MRO Store,Low,69146
+SP-GEN-048,Electric Motor Service Spare 048,Electric Motor,12,7,16,Tata Industrial Supplies,High,44279
+SP-GEN-049,Compressor Service Spare 049,Compressor,20,12,30,Tata Industrial Supplies,High,40363
+SP-GEN-050,Electric Motor Service Spare 050,Electric Motor,19,12,16,OEM Service Center,Medium,92384
+SP-GEN-051,Centrifugal Pump Service Spare 051,Centrifugal Pump,35,4,9,Local MRO Store,High,50695
+SP-GEN-052,Lubrication Pump Service Spare 052,Lubrication Pump,11,11,21,OEM Service Center,Medium,72819
+SP-GEN-053,Hydraulic Pump Service Spare 053,Hydraulic Pump,19,6,9,Local MRO Store,High,80516
+SP-GEN-054,Lubrication Pump Service Spare 054,Lubrication Pump,20,9,17,Local MRO Store,High,29010
+SP-GEN-055,Electric Motor Service Spare 055,Electric Motor,30,4,24,Tata Industrial Supplies,Medium,68561
+SP-GEN-056,Lubrication Pump Service Spare 056,Lubrication Pump,40,11,13,Tata Industrial Supplies,Low,89184
+SP-GEN-057,Centrifugal Pump Service Spare 057,Centrifugal Pump,14,5,7,Tata Industrial Supplies,Low,33092
+SP-GEN-058,Burner Service Spare 058,Burner,39,3,17,Local MRO Store,High,76454
+SP-GEN-059,Gearbox Service Spare 059,Gearbox,24,9,15,JSW Vendor Hub,Low,86990
+SP-GEN-060,Fan Service Spare 060,Fan,0,3,27,Local MRO Store,Low,24053
+SP-GEN-061,Fan Service Spare 061,Fan,33,9,4,JSW Vendor Hub,Low,60829
+SP-GEN-062,Blower Service Spare 062,Blower,29,12,19,OEM Service Center,Medium,81301
+SP-GEN-063,Fan Service Spare 063,Fan,32,8,29,Local MRO Store,Low,63216
+SP-GEN-064,Burner Service Spare 064,Burner,16,5,29,OEM Service Center,High,64517
+SP-GEN-065,Lubrication Pump Service Spare 065,Lubrication Pump,15,6,17,Tata Industrial Supplies,High,38450
+SP-GEN-066,Gearbox Service Spare 066,Gearbox,17,7,13,Tata Industrial Supplies,Low,20769
+SP-GEN-067,Gearbox Service Spare 067,Gearbox,24,4,25,JSW Vendor Hub,Low,55377
+SP-GEN-068,Fan Service Spare 068,Fan,21,10,17,Local MRO Store,Low,28110
+SP-GEN-069,Fan Service Spare 069,Fan,24,11,25,Tata Industrial Supplies,High,50857
+SP-GEN-070,Burner Service Spare 070,Burner,0,7,12,Local MRO Store,Medium,71545
+SP-GEN-071,Fan Service Spare 071,Fan,34,11,10,Local MRO Store,Low,36774
+SP-GEN-072,Fan Service Spare 072,Fan,31,2,15,OEM Service Center,High,90016
+SP-GEN-073,Fan Service Spare 073,Fan,10,9,7,Tata Industrial Supplies,Medium,78580
+SP-GEN-074,Compressor Service Spare 074,Compressor,1,3,23,Local MRO Store,Low,61515
+SP-GEN-075,Blower Service Spare 075,Blower,3,6,15,OEM Service Center,Low,60598
+SP-GEN-076,Drive Unit Service Spare 076,Drive Unit,21,8,11,Local MRO Store,Medium,11735
+SP-GEN-077,Burner Service Spare 077,Burner,1,10,4,OEM Service Center,Low,86215
+SP-GEN-078,Electric Motor Service Spare 078,Electric Motor,2,2,10,JSW Vendor Hub,Low,82439
+SP-GEN-079,Blower Service Spare 079,Blower,15,4,18,Tata Industrial Supplies,High,29569
+SP-GEN-080,Burner Service Spare 080,Burner,16,7,8,Tata Industrial Supplies,Low,41768
+SP-GEN-081,Electric Motor Service Spare 081,Electric Motor,37,2,12,Local MRO Store,Medium,94718
+SP-GEN-082,Gearbox Service Spare 082,Gearbox,4,11,25,JSW Vendor Hub,Low,92382
+SP-GEN-083,Centrifugal Pump Service Spare 083,Centrifugal Pump,38,3,28,Tata Industrial Supplies,Medium,70827
+SP-GEN-084,Fan Service Spare 084,Fan,23,3,19,OEM Service Center,Low,56057
+SP-GEN-085,Burner Service Spare 085,Burner,6,8,14,Local MRO Store,High,21052
+SP-GEN-086,Fan Service Spare 086,Fan,11,10,23,OEM Service Center,High,71539
+SP-GEN-087,Burner Service Spare 087,Burner,29,8,29,OEM Service Center,Medium,33177
+SP-GEN-088,Electric Motor Service Spare 088,Electric Motor,17,9,10,Local MRO Store,High,80997
+SP-GEN-089,Lubrication Pump Service Spare 089,Lubrication Pump,24,7,3,Local MRO Store,Medium,24834
+SP-GEN-090,Burner Service Spare 090,Burner,13,7,28,OEM Service Center,Medium,37655
+SP-GEN-091,Compressor Service Spare 091,Compressor,17,10,3,JSW Vendor Hub,Low,32635
+SP-GEN-092,Fan Service Spare 092,Fan,26,9,20,JSW Vendor Hub,High,63402
+SP-GEN-093,Lubrication Pump Service Spare 093,Lubrication Pump,31,9,28,Tata Industrial Supplies,Low,39566
+SP-GEN-094,Gearbox Service Spare 094,Gearbox,25,5,12,OEM Service Center,Medium,73544
+SP-GEN-095,Electric Motor Service Spare 095,Electric Motor,22,8,26,OEM Service Center,Medium,93124
+SP-GEN-096,Burner Service Spare 096,Burner,17,6,11,JSW Vendor Hub,Low,26242
+SP-GEN-097,Drive Unit Service Spare 097,Drive Unit,7,10,27,JSW Vendor Hub,Low,29361
+SP-GEN-098,Fan Service Spare 098,Fan,30,6,26,OEM Service Center,Low,26443
+SP-GEN-099,Centrifugal Pump Service Spare 099,Centrifugal Pump,14,7,8,OEM Service Center,Low,93801
+SP-GEN-100,Electric Motor Service Spare 100,Electric Motor,8,6,4,Tata Industrial Supplies,High,39290
+SP-GEN-101,Fan Service Spare 101,Fan,8,12,30,Local MRO Store,Low,2607
+SP-GEN-102,Compressor Service Spare 102,Compressor,18,9,18,Local MRO Store,Medium,25164
+SP-GEN-103,Hydraulic Pump Service Spare 103,Hydraulic Pump,16,9,6,Tata Industrial Supplies,Medium,65454
+SP-GEN-104,Electric Motor Service Spare 104,Electric Motor,36,12,24,Tata Industrial Supplies,Low,20555
+SP-GEN-105,Compressor Service Spare 105,Compressor,19,3,10,Tata Industrial Supplies,High,55548
+SP-GEN-106,Compressor Service Spare 106,Compressor,38,11,10,Local MRO Store,Medium,59028
+SP-GEN-107,Centrifugal Pump Service Spare 107,Centrifugal Pump,37,8,12,Tata Industrial Supplies,High,14006
+SP-GEN-108,Gearbox Service Spare 108,Gearbox,40,5,11,Tata Industrial Supplies,Low,32439
+SP-GEN-109,Blower Service Spare 109,Blower,35,3,8,Tata Industrial Supplies,Medium,60048
+SP-GEN-110,Fan Service Spare 110,Fan,38,9,12,Tata Industrial Supplies,Low,38762
+SP-GEN-111,Fan Service Spare 111,Fan,18,9,5,JSW Vendor Hub,Medium,82927
+SP-GEN-112,Compressor Service Spare 112,Compressor,12,8,6,JSW Vendor Hub,High,20528
+SP-GEN-113,Centrifugal Pump Service Spare 113,Centrifugal Pump,9,3,4,JSW Vendor Hub,Medium,78993
+SP-GEN-114,Fan Service Spare 114,Fan,36,6,17,Tata Industrial Supplies,Medium,91266
+SP-GEN-115,Centrifugal Pump Service Spare 115,Centrifugal Pump,25,6,19,Local MRO Store,Medium,11543
+SP-GEN-116,Compressor Service Spare 116,Compressor,2,8,26,OEM Service Center,High,33816
+SP-GEN-117,Hydraulic Pump Service Spare 117,Hydraulic Pump,5,5,24,Tata Industrial Supplies,High,36325
+SP-GEN-118,Compressor Service Spare 118,Compressor,2,4,18,Local MRO Store,Medium,24788
+SP-GEN-119,Compressor Service Spare 119,Compressor,27,12,29,Local MRO Store,Low,62605
+SP-GEN-120,Drive Unit Service Spare 120,Drive Unit,26,7,13,Tata Industrial Supplies,Low,44228
+SP-GEN-121,Fan Service Spare 121,Fan,31,6,24,Local MRO Store,High,5809
+SP-GEN-122,Burner Service Spare 122,Burner,5,7,11,OEM Service Center,Low,53976
+SP-GEN-123,Electric Motor Service Spare 123,Electric Motor,0,12,30,Local MRO Store,Medium,8104
+SP-GEN-124,Gearbox Service Spare 124,Gearbox,33,7,22,Local MRO Store,High,58939
+SP-GEN-125,Hydraulic Pump Service Spare 125,Hydraulic Pump,13,6,20,JSW Vendor Hub,Medium,58424
+SP-GEN-126,Fan Service Spare 126,Fan,31,3,3,JSW Vendor Hub,High,21758
+SP-GEN-127,Centrifugal Pump Service Spare 127,Centrifugal Pump,35,2,20,Local MRO Store,Low,30451
+SP-GEN-128,Electric Motor Service Spare 128,Electric Motor,29,3,23,JSW Vendor Hub,Medium,94926
+SP-GEN-129,Centrifugal Pump Service Spare 129,Centrifugal Pump,32,6,16,Local MRO Store,Medium,32946
+SP-GEN-130,Burner Service Spare 130,Burner,35,4,15,JSW Vendor Hub,High,67616
+SP-GEN-131,Fan Service Spare 131,Fan,8,3,11,Local MRO Store,Medium,67550
+SP-GEN-132,Centrifugal Pump Service Spare 132,Centrifugal Pump,0,6,26,OEM Service Center,High,77011
+SP-GEN-133,Lubrication Pump Service Spare 133,Lubrication Pump,31,4,17,Local MRO Store,Medium,44573
+SP-GEN-134,Electric Motor Service Spare 134,Electric Motor,34,8,17,OEM Service Center,Low,92422
+SP-GEN-135,Gearbox Service Spare 135,Gearbox,36,8,10,Local MRO Store,Low,42704
+SP-GEN-136,Fan Service Spare 136,Fan,30,8,15,JSW Vendor Hub,Medium,5852
+SP-GEN-137,Blower Service Spare 137,Blower,32,11,13,Tata Industrial Supplies,Medium,14069
+SP-GEN-138,Electric Motor Service Spare 138,Electric Motor,29,2,26,JSW Vendor Hub,Medium,86823
+SP-GEN-139,Blower Service Spare 139,Blower,4,9,28,OEM Service Center,Medium,82691
+SP-GEN-140,Fan Service Spare 140,Fan,25,12,5,OEM Service Center,High,70942
+SP-GEN-141,Fan Service Spare 141,Fan,20,12,25,Local MRO Store,High,5705
+SP-GEN-142,Compressor Service Spare 142,Compressor,4,5,23,OEM Service Center,Low,12846
+SP-GEN-143,Fan Service Spare 143,Fan,6,12,25,Tata Industrial Supplies,Medium,22805
+SP-GEN-144,Fan Service Spare 144,Fan,19,2,4,OEM Service Center,Low,39452
+SP-GEN-145,Drive Unit Service Spare 145,Drive Unit,23,8,7,JSW Vendor Hub,High,55008
+SP-GEN-146,Compressor Service Spare 146,Compressor,11,4,8,Tata Industrial Supplies,High,51140
+SP-GEN-147,Compressor Service Spare 147,Compressor,15,9,21,JSW Vendor Hub,Low,61443
+SP-GEN-148,Lubrication Pump Service Spare 148,Lubrication Pump,16,9,11,Tata Industrial Supplies,Medium,38700
+SP-GEN-149,Lubrication Pump Service Spare 149,Lubrication Pump,34,4,5,Local MRO Store,Medium,78014
+SP-GEN-150,Centrifugal Pump Service Spare 150,Centrifugal Pump,40,8,25,OEM Service Center,Medium,40599

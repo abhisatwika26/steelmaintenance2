@@ -1,0 +1,23 @@
+Failure Report: FR-008
+Equipment ID: EQ-012
+Equipment Name: Cooling Tower Fan
+Plant Area: Utilities
+Failure Mode: Bearing Wear
+Fault Code: FM-001
+Event Time: 2026-05-06T09:45
+Severity: Medium
+
+Observed Symptoms:
+The maintenance team observed rising vibration and abnormal bearing noise. Sensor history around the event showed abnormal behavior compared with the normal operating band for this asset.
+
+Root Cause:
+progressive bearing wear caused by lubrication degradation.
+
+Corrective Action:
+inspect bearing housing, verify lubrication flow, replace bearing if vibration remains high. The required spare references were SP-BEAR-001, SP-GREASE-001.
+
+Downtime:
+Total equipment delay was 79 minutes.
+
+Lessons Learned:
+Future alerts should combine anomaly score, equipment criticality, recent maintenance history, and spare availability before assigning intervention priority.
